@@ -5,15 +5,9 @@ import { SiSecurityscorecard } from "react-icons/si";
 import { GrHomeRounded } from "react-icons/gr";
 import { CiUser } from "react-icons/ci";
 function Sidebar() {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    
     const [isHovered, setIsHovered] = useState(false);
-    const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen);
-    };
-
-    const closeDropdown = () => {
-        setIsDropdownOpen(false);
-    };
+   
     function handleButton(){
         alert("logout successfully");
     }
@@ -40,34 +34,16 @@ function Sidebar() {
                 <ul className="sidebar-menu flex-1 pt-8">
                     <li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
                         <div className="logo-image h-6 w-auto mr-6"><GrHomeRounded /></div>
-                        <Link to="/">Dashboard</Link>
+                        <Link to="/">Home</Link>
                     </li>
-                    <li className="relative" onClick={toggleDropdown}>
-                        <div className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
-                            <div className="logo-image h-6 w-auto mr-6"><MdOutlineDashboardCustomize /></div>
-                            Masters
-                        </div>
-                        {isDropdownOpen && (
-                            <ul className="dropdown-menu absolute bg-gray-800 text-white py-2 mt-2 w-full " onClick={(e) => e.stopPropagation()}>
-                            <li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2"><Link to="/addvenue">Add venue</Link></li>
-                            <li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2"><Link to="/addequip">Add Equipment</Link></li>
-                            <li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2"><Link to="/addfood">Add Food</Link></li>
-                            <li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2"><Link to="/addlights">Add Lightning</Link></li>
-                            <li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2"><Link to="/addflowers">Add Flowers</Link></li>
-                            <li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2"><a href="#" >Approval</a></li>
-                            <li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold "><a href="#" >Booking Search</a></li>
-
-                            
-                        </ul>
-                        )}
-                    </li>
+                    
                     <li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
                         <div className="logo-image h-6 w-auto mr-6"> <MdCurrencyExchange /></div>
-                        Transactions
+                        <Link to="/booking">Book Event</Link>
                     </li>
                     <li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
                         <div className="logo-image h-6 w-auto mr-6"> <SiSecurityscorecard /></div>
-                        Authentication
+                        <Link to="/status">Booking status</Link>
                     </li>
                 </ul>
                 <div className="sidebar-below">

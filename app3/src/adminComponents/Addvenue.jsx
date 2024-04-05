@@ -22,7 +22,9 @@ const Addvenue = () => {
           <div className='flex justify-between'>
             <Button color="blue" ripple="light" className='w-2/5 h-12'>Add new venue</Button>
             <Button color="gray" ripple="light" className='w-2/5'>Cancel</Button>
+            
           </div>
+          <button className=' text-blue-500 hover:underline'>see all venues</button>
         </div>
       </div>
     </div>
