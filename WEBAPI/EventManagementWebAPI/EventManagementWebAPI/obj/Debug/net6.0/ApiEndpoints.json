@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "EventManagementWebAPI.Controllers.UserRegisterController",
+    "Method": "log",
+    "RelativePath": "api/UserRegister/log",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventManagementWebAPI.Controllers.UserRegisterController",
+    "Method": "insert",
+    "RelativePath": "api/UserRegister/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "EventManagementWebAPI.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
