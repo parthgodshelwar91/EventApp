@@ -32,19 +32,19 @@ function Sidebar() {
                         </h1>
                     </div>
                 <ul className="sidebar-menu flex-1 pt-8">
-                    <li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
+                    <Link to="/"><li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
                         <div className="logo-image h-6 w-auto mr-6"><GrHomeRounded /></div>
-                        <Link to="/">Home</Link>
-                    </li>
+                        Home
+                    </li></Link>
                     
-                    <li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
+                    <Link to="/booking"><li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
                         <div className="logo-image h-6 w-auto mr-6"> <MdCurrencyExchange /></div>
-                        <Link to="/booking">Book Event</Link>
-                    </li>
-                    <li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
+                        Book Event
+                    </li></Link>
+                    <Link to="/status"><li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
                         <div className="logo-image h-6 w-auto mr-6"> <SiSecurityscorecard /></div>
-                        <Link to="/status">Booking status</Link>
-                    </li>
+                        Booking status
+                    </li></Link>
                 </ul>
                 <div className="sidebar-below">
                     <button
