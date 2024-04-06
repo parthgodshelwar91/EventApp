@@ -7,7 +7,7 @@ import { CiUser } from "react-icons/ci";
 
 function Sidebar() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const [isHovered, setIsHovered] = useState(false);
+    
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
     };
@@ -29,14 +29,13 @@ function Sidebar() {
                 <div className='flex items-center'>
                     <CiUser
                         className="mt-2 ml-6 size-8"
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
+                        
                     />
                     <h1
-                        className={`text-white ml-8 text-lg font-semibold ${isHovered ? 'visible' : 'hidden'}`}
+                        className={`text-white ml-8 text-lg font-semibold `}
                     >
                         pratik kalghuge
-                        pune
+                        
                     </h1>
                 </div>
                 <ul className="sidebar-menu flex-1 pt-8">
@@ -51,13 +50,13 @@ function Sidebar() {
                         </div>
                         {isDropdownOpen && (
                             <ul className="dropdown-menu absolute bg-gray-800 text-white py-2 mt-2 w-full z-10" onClick={(e) => e.stopPropagation()}>
-                                 <li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2"><Link to="/addvenue">Add venue</Link></li>
-                                <li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2"><Link to="/addequip">Add Equipment</Link></li>
-                                <li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2"><Link to="/addfood">Add Food</Link></li>
-                                <li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2"><Link to="/addlights">Add Lightning</Link></li>
-                                <li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2"><Link to="/addflowers">Add Flowers</Link></li>
-                                <li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2"><Link to="/approval">Approval</Link></li>
-                                <li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2"><Link to="/bookingsearch">Booking Search</Link></li>
+                                <Link to="/addvenue"><li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2">Add venue</li></Link>
+                                <Link to="/addequip"><li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2">Add Equipment</li></Link>
+                                <Link to="/addfood"><li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2">Add Food</li></Link>
+                                <Link to="/addlights"><li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2">Add Lightning</li></Link>
+                                <Link to="/addflowers"><li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2">Add Flowers</li></Link>
+                                <Link to="/approval"><li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2">Approval</li></Link>
+                                <Link to="/bookingsearch"><li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2">Booking Search</li></Link>
                             </ul>
                         )}
                     </li>

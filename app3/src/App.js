@@ -8,7 +8,10 @@ import Booking from "./userComponents/Booking";
 import Status from "./userComponents/Status";
 import User from "./userComponents/User";
 import Login from "./userComponents/Login";
-
+import BookEquipment from "./userComponents/BookEquipment";
+import BookFood from "./userComponents/BookFood";
+import BookLights from "./userComponents/BookLights";
+import BookFlowers from "./userComponents/BookFlowers";
 /* admin */
 import Adminsidebar from "./adminComponents/Adminsidebar";
 import AdminHome from "./adminComponents/AdminHome";
@@ -21,6 +24,7 @@ import Approval from "./adminComponents/Approval";
 import BookingSearch from "./adminComponents/BookingSearch";
 import ForgotPassword from "./adminComponents/ForgotPassword";
 import AllVenues from "./adminComponents/Allvenue";
+
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [userRole, setUserRole] = useState("");
@@ -63,6 +67,11 @@ function App() {
                   <Route path="/booking" element={<Booking />} />
                   <Route path="/status" element={<Status />} />
                   <Route path="/user" element={<User />} />
+                  <Route path="/bookEquipment" element={<BookEquipment />} />
+                  <Route path="/bookFood" element={<BookFood />} />
+                  <Route path="/bookLights" element={<BookLights />} />
+                  <Route path="/bookFlowers" element={<BookFlowers />} />
+                  <Route path="/forgotpassword" element={<ForgotPassword />}/>
                   
                 </>
               )}

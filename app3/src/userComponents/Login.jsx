@@ -26,8 +26,14 @@ const Login = ({ setLoggedIn, setUserRole }) => {
     setShowPassword(!showPassword);
   };
 
+  function handleregister(){
+    const but1 =document.querySelector(".class1");
+    if (but1) {
+      but1.style.display = 'none';
+    }
+  }
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-600">
+    <div className=" class1 flex flex-col items-center justify-center min-h-screen bg-gray-600">
       <div className="bg-white p-8 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
         <div className="mb-4">
@@ -90,7 +96,7 @@ const Login = ({ setLoggedIn, setUserRole }) => {
           </button>
           <p className=" mt-4">
             Don't have an account?{" "}
-            <span className="text-blue-400 cursor-pointer ml-1 ">
+            <span className="text-blue-400 cursor-pointer ml-1 " onClick={handleregister}>
               {/* onClick={toggleComponents} {showComponent1 ? <Registration /> : <Login />} */}
               <Link to="/register">Register here</Link>
             </span>

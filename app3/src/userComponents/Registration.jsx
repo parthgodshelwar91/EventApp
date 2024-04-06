@@ -30,7 +30,7 @@ const Registration = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100 mt-[400px]  ">
+    <div className="flex justify-center items-center h-screen bg-gray-100 mt-[0px]  ">
       <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 max-w-4xl w-full">
         <h2 className="text-2xl font-bold mb-6 text-center">Registration</h2>
         <form onSubmit={handleSubmit} className="flex flex-col ">
