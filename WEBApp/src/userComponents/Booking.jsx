@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from "@material-tailwind/react";
-
+import { Link } from 'react-router-dom';
 function Booking() {
   const [eventType, setEventType] = useState('');
   const [venueType, setVenueType] = useState('');
@@ -35,6 +35,31 @@ function Booking() {
     setBookingDate(event.target.value);
   };
 
+  /* const handleSubmit = () => {
+    if (!eventType || !venueType || !numberOfGuests || !bookingDate) {
+      alert("Please fill in all fields.");
+    } else {
+      // Perform action (e.g., submit form)
+      console.log("Form submitted successfully!");
+    }
+  }; */
+  function handleButton() {
+    if (!eventType || !venueType || !numberOfGuests || !bookingDate) {
+      alert("Please fill in all fields.");
+    }else{
+      const but1 = document.querySelector('.but1');
+    if (but1) {
+      but1.style.display = 'none';
+    }
+  
+    
+    const but2 = document.querySelector('.but2');
+    if (but2) {
+      but2.style.display = 'inline-block';
+    }
+    }
+    
+  }
   const renderImages = () => {
     const images = eventType ? eventImages[eventType] : [];
     return images.map((imageUrl, index) => (
@@ -81,7 +106,10 @@ function Booking() {
               <input type="date" id="bookingDate" name="bookingDate" className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-indigo-300" value={bookingDate} onChange={handleBookingDateChange} />
             </div>
             <div className='flex justify-around w-[300px]'>
-              <Button color="gray" ripple="light" className=' w-42 h-12 mr-12 hover:bg-white hover:text-black border-2 border-black shadow-xl'>Check Avaialability</Button>
+              <Button color="gray" ripple="light" className=' but1 w-42 h-12 mr-12 hover:bg-white hover:text-black border-2 border-black shadow-xl' /* onClick={handleSubmit} */ onClick={handleButton} >Check Avaialability</Button>
+              
+              <Button color="gray" ripple="light" className=' but2 w-42 h-12 mr-12 hover:bg-white hover:text-black border-2 border-black shadow-xl hidden'><Link to="/bookEquipment">add event</Link></Button>
+
               <Button color="gray" ripple="light" className='w-2/5 h-12 hover:bg-white hover:text-black border-2 border-black shadow-xl'>Cancel</Button>
             </div>
           </div>

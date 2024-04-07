@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from "@material-tailwind/react";
-
+import { Link } from 'react-router-dom';
 const Addvenue = () => {
   return (
     <div className='flex flex-col justify-center items-center h-screen'>
@@ -20,11 +20,11 @@ const Addvenue = () => {
             <input id="venueImage" type="file" className='w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500'/>
           </div>
           <div className='flex justify-between'>
-            <Button color="blue" ripple="light" className='w-2/5 h-12'>Add new venue</Button>
+            <Button color="blue" ripple="light" className='w-40 h-12'>Add new venue</Button>
             <Button color="gray" ripple="light" className='w-2/5'>Cancel</Button>
             
           </div>
-          <button className=' text-blue-500 hover:underline'>see all venues</button>
+          <Link to="/allvenues"><button className=' text-blue-500 hover:underline'>see all venues</button></Link>
         </div>
       </div>
     </div>

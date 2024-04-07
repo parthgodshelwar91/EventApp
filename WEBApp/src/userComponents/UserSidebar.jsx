@@ -5,9 +5,6 @@ import { SiSecurityscorecard } from "react-icons/si";
 import { GrHomeRounded } from "react-icons/gr";
 import { CiUser } from "react-icons/ci";
 function Sidebar() {
-    
-    const [isHovered, setIsHovered] = useState(false);
-   
     function handleButton(){
         alert("logout successfully");
     }
@@ -21,30 +18,33 @@ function Sidebar() {
                 <div className='flex items-center'>
                     <CiUser
                     className="mt-2 ml-6 size-8"
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
+                    
                     />
                         <h1
-                            className={`text-white ml-8 text-lg font-semibold ${isHovered ? 'visible' : 'hidden'}`}
+                            className={`text-white ml-8 text-lg font-semibold `}
                         >
                             pratik kalghuge
-                            pune
+                            
                         </h1>
                     </div>
                 <ul className="sidebar-menu flex-1 pt-8">
-                    <li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
+                    <Link to="/"><li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
                         <div className="logo-image h-6 w-auto mr-6"><GrHomeRounded /></div>
-                        <Link to="/">Home</Link>
-                    </li>
+                        Home
+                    </li></Link>
                     
-                    <li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
+                    <Link to="/booking"><li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
                         <div className="logo-image h-6 w-auto mr-6"> <MdCurrencyExchange /></div>
-                        <Link to="/booking">Book Event</Link>
-                    </li>
-                    <li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
+                        Book Event
+                    </li></Link>
+                    <Link to="/status"><li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
                         <div className="logo-image h-6 w-auto mr-6"> <SiSecurityscorecard /></div>
-                        <Link to="/status">Booking status</Link>
-                    </li>
+                        Booking status
+                    </li></Link>
+                    <Link to="/forgotpassword"><li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
+                            <div className="logo-image h-6 w-auto mr-6"> <SiSecurityscorecard /></div>
+                            Authentication
+                        </li></Link>
                 </ul>
                 <div className="sidebar-below">
                     <button

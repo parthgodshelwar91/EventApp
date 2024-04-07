@@ -1,12 +1,23 @@
 [
   {
-    "ContainingType": "EventManagementWebAPI.Controllers.UserRegisterController",
-    "Method": "log",
-    "RelativePath": "api/UserRegister/log",
+    "ContainingType": "EventManagementWebAPI.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login/login",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

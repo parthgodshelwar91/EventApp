@@ -22,7 +22,7 @@ namespace EventManagementWebAPI.DAL
 
             SqlCommand command = connection.CreateCommand();
             command.CommandType = CommandType.Text;
-            command.CommandText = "INSERT INTO Users (Name,Country,MobileNumber,Email,Username,Password,ConfirmPassword,Gender,Birthdate,RoleId) VALUES (@Name,@Country,@MobileNumber,@Email,@Username,@Password,@ConfirmPassword,@Gender,@Birthdate,1)";
+            command.CommandText = "INSERT INTO Registration (Name,Country,MobileNumber,Email,Username,Password,ConfirmPassword,Gender,Birthdate,RoleId) VALUES (@Name,@Country,@MobileNumber,@Email,@Username,@Password,@ConfirmPassword,@Gender,@Birthdate,1)";
             command.Parameters.AddWithValue("@Name", user.Name);
             command.Parameters.AddWithValue("@Country", user.Country);
             command.Parameters.AddWithValue("@MobileNumber", user.MobileNumber);
@@ -36,7 +36,7 @@ namespace EventManagementWebAPI.DAL
 
             await command.ExecuteNonQueryAsync();
         }
-        public bool ValidateUserCredentials(string username,string password) { 
+        public async Task<bool> ValidateUserCredentials(string username,string password) { 
 
             return true;
         }
