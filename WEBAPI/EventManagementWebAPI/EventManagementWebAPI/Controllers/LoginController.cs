@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Reflection;
 using System.Text;
 using System.Security.Cryptography;
+using EventManagementWebAPI.Models;
 
 
 namespace EventManagementWebAPI.Controllers
@@ -23,11 +24,11 @@ namespace EventManagementWebAPI.Controllers
             string hashedPassword = HashPassword(password);
 
             // Check if the username and hashed password match a user in the database
-            bool isAuthenticated = await _dac.ValidateUserCredentials(username , hashedPassword);
+            User isAuthenticated = await _dac.ValidateUserCredentials(username , hashedPassword);
 
-            if (isAuthenticated)
+            if (isAuthenticated!=null)
             {
-                return Ok("Login successful.");
+                return Ok("Login SucessFully");
             }
             else
             {

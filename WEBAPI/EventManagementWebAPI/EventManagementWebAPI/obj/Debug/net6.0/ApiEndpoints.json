@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "EventManagementWebAPI.Controllers.addFlowerController",
+    "Method": "InsertFlowers",
+    "RelativePath": "api/addFlower/addVenue",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "flower",
+        "Type": "EventManagementWebAPI.Models.Flower",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventManagementWebAPI.Controllers.EquipmentController",
+    "Method": "PostVenue",
+    "RelativePath": "api/Equipment/addEquipment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "equipment",
+        "Type": "EventManagementWebAPI.Models.Equipment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EventManagementWebAPI.Controllers.LoginController",
     "Method": "Login",
     "RelativePath": "api/Login/login",
@@ -31,6 +63,22 @@
       {
         "Name": "user",
         "Type": "EventManagementWebAPI.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventManagementWebAPI.Controllers.VenueController",
+    "Method": "PostVenue",
+    "RelativePath": "api/Venue/addVenue",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "venue",
+        "Type": "EventManagementWebAPI.Models.Venue",
         "IsRequired": true
       }
     ],

@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using System.Text;
 using System.Security.Cryptography;
 using System.Reflection;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace EventManagementWebAPI.Controllers
 {
@@ -38,7 +40,7 @@ namespace EventManagementWebAPI.Controllers
 
         }
 
-
+       
         private string HashPassword(string password)
         {
             using SHA256 sha256 = SHA256.Create();
