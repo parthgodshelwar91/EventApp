@@ -71,11 +71,6 @@ function Sidebar() {
                     </button>
                 </div>
             </div>
-
-            
-            <div className="flex-1 bg-gray-100">
-                
-            </div>
         </div>
     );
 }

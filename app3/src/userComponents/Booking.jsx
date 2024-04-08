@@ -35,14 +35,6 @@ function Booking() {
     setBookingDate(event.target.value);
   };
 
-  /* const handleSubmit = () => {
-    if (!eventType || !venueType || !numberOfGuests || !bookingDate) {
-      alert("Please fill in all fields.");
-    } else {
-      // Perform action (e.g., submit form)
-      console.log("Form submitted successfully!");
-    }
-  }; */
   function handleButton() {
     if (!eventType || !venueType || !numberOfGuests || !bookingDate) {
       alert("Please fill in all fields.");
@@ -74,7 +66,7 @@ function Booking() {
 
   return (
     <>
-      <div className='flex'>
+      <div className='flex flex-col md:flex-row'>
         <div className="p-4 bg-gray-100 rounded-lg shadow-md w-[500px] ml-[400px] mt-[300px]">
           <h2 className="text-xl font-bold mb-4">Booking Form</h2>
           
@@ -106,7 +98,7 @@ function Booking() {
               <input type="date" id="bookingDate" name="bookingDate" className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-indigo-300" value={bookingDate} onChange={handleBookingDateChange} />
             </div>
             <div className='flex justify-around w-[300px]'>
-              <Button color="gray" ripple="light" className=' but1 w-42 h-12 mr-12 hover:bg-white hover:text-black border-2 border-black shadow-xl' /* onClick={handleSubmit} */ onClick={handleButton} >Check Avaialability</Button>
+              <Button color="gray" ripple="light" className=' but1 w-42 h-12 mr-12 hover:bg-white hover:text-black border-2 border-black shadow-xl'  onClick={handleButton} >Check Avaialability</Button>
               
               <Button color="gray" ripple="light" className=' but2 w-42 h-12 mr-12 hover:bg-white hover:text-black border-2 border-black shadow-xl hidden'><Link to="/bookEquipment">add event</Link></Button>
 
