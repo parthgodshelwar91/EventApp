@@ -20,38 +20,55 @@ const AllVenues = () => {
   ];
 
   return (
-    <div className="container mx-auto py-8">
-      <h2 className="text-2xl font-bold mb-4">Available Venues</h2>
-      <table className="min-w-full divide-y divide-gray-200">
-        <thead>
-          <tr>
-            <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-              Venue Name
-            </th>
-            <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-              Cost
-            </th>
-            <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-              Image
-            </th>
-          </tr>
-        </thead>
-        <tbody className="bg-white divide-y divide-gray-200">
-          {venues.map((venue, index) => (
-            <tr key={index}>
-              <td className="px-6 py-4 whitespace-nowrap">{venue.name}</td>
-              <td className="px-6 py-4 whitespace-nowrap">${venue.cost}</td>
-              <td className="px-6 py-4 whitespace-nowrap">
-                <img
-                  src={venue.image}
-                  alt={venue.name}
-                  className="h-20 w-auto"
-                />
-              </td>
+    <div className="container mx-auto py-8 mt-[250px]">
+      <h2 className="text-3xl font-semibold text-gray-800 mb-6">
+        Available Venues
+      </h2>
+      <div className="bg-white shadow-md rounded-lg overflow-hidden">
+        <table className="min-w-full divide-y divide-gray-200">
+          <thead className="bg-gray-50">
+            <tr>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Venue Name
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Cost
+              </th>
+              <th
+                scope="col"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >
+                Image
+              </th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody className="divide-y divide-gray-200">
+            {venues.map((venue, index) => (
+              <tr key={index} className="hover:bg-gray-100 transition-colors duration-300">
+                <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900">
+                  {venue.name}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-gray-800">
+                  ${venue.cost}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap">
+                  <img
+                    src={venue.image}
+                    alt={venue.name}
+                    className="h-20 w-auto rounded-md"
+                  />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

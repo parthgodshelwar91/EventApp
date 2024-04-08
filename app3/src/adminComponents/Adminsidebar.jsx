@@ -55,7 +55,7 @@ function Sidebar() {
                                 <Link to="/addfood"><li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2">Add Food</li></Link>
                                 <Link to="/addlights"><li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2">Add Lightning</li></Link>
                                 <Link to="/addflowers"><li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2">Add Flowers</li></Link>
-                                <Link to="/approval"><li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2">Approval</li></Link>
+                                <Link to="/allvenues"><li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2">Approval</li></Link>
                                 <Link to="/bookingsearch"><li className="dropdown-item block px-8 hover:bg-slate-400 hover:text-black py-2 font-semibold border-b-2">Booking Search</li></Link>
                             </ul>
                         )}
