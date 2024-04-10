@@ -2879,19 +2879,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anisha\\.nuget\\packages\\": {}
+    "C:\\Users\\parth\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\parth\\Desktop\\people\\parth\\Projects\\SocialBrand\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
       "projectName": "EventManagementWebAPI",
-      "projectPath": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
-      "packagesPath": "C:\\Users\\anisha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\obj\\",
+      "projectPath": "C:\\Users\\parth\\Desktop\\people\\parth\\Projects\\SocialBrand\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
+      "packagesPath": "C:\\Users\\parth\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\parth\\Desktop\\people\\parth\\Projects\\SocialBrand\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\anisha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\parth\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2958,7 +2958,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
