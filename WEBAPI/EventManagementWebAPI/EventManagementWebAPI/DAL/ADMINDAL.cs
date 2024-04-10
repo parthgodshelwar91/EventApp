@@ -16,7 +16,7 @@ namespace EventManagementWebAPI.DAL
             _connectionString = connectionString;
         }
 
-        public async Task InsertVenue(Venue venue)
+        public async Task InsertVenue(Venue1 venue)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {

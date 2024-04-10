@@ -2,7 +2,7 @@
   {
     "ContainingType": "EventManagementWebAPI.Controllers.addFlowerController",
     "Method": "InsertFlowers",
-    "RelativePath": "api/addFlower/addVenue",
+    "RelativePath": "api/addFlower/addflower",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
