@@ -16,7 +16,7 @@ namespace EventManagementWebAPI.DAL
             _connectionString = connectionString;
         }
 
-        public async Task InsertVenue(Venue1 venue)
+        public async Task InsertVenue(Venue venue)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
@@ -29,7 +29,7 @@ namespace EventManagementWebAPI.DAL
                 // Set parameters
                 command.Parameters.AddWithValue("@VName", venue.VName);
                 command.Parameters.AddWithValue("@VenueCost", venue.VenueCost);
-                command.Parameters.AddWithValue("@VenueImage", venue.VenueImage);
+                command.Parameters.AddWithValue("@VenueImage", venue.VenueImagePath);
 
                 await command.ExecuteNonQueryAsync();
             }
