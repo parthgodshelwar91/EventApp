@@ -29,7 +29,6 @@ function DataTableWithSearch() {
     )
   );
 
- 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
@@ -37,7 +36,7 @@ function DataTableWithSearch() {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="container mx-auto p-4 mt-[250px]">
+    <div className="container mx-auto p-4 mt-[200px]">
       <div className="flex justify-center mb-4">
         <input
           type="text"
@@ -84,14 +83,18 @@ function DataTableWithSearch() {
       <div className="flex justify-between mt-4">
         <div>
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2 disabled:opacity-50 disabled:cursor-not-allowed"
+            className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2 ${
+              currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
             onClick={() => paginate(currentPage - 1)}
             disabled={currentPage === 1}
           >
             Previous
           </button>
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed"
+            className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ${
+              indexOfLastItem >= filteredData.length ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
             onClick={() => paginate(currentPage + 1)}
             disabled={indexOfLastItem >= filteredData.length}
           >
