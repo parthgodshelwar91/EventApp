@@ -1,3 +1,177 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Styles for small screens */
+@media (max-width: 640px) {
+    .product-card {
+      width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+  
+    .flex-wrap {
+      justify-content: center;
+    }
+  }
+
+  /* Styles for small screens */
+@media (max-width: 640px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    .sidebar-header {
+      text-align: center;
+    }
+  
+    .sidebar-menu {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .sidebar-menu li {
+      flex-direction: column;
+      text-align: center;
+      margin: 0.5rem;
+    }
+  
+    .sidebar-below {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+  /* Styles for small screens */
+@media (max-width: 640px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar-header {
+    text-align: center;
+  }
+
+  .sidebar-menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .sidebar-menu li {
+    flex-direction: column;
+    text-align: center;
+    margin: 0.5rem;
+  }
+
+  .sidebar-below {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+/* status */
+/* Styles for small screens */
+@media (max-width: 640px) {
+    .container {
+      padding: 0.5rem;
+    }
+  
+    .table-auto {
+      overflow-x: auto;
+      display: block;
+    }
+  
+    .table-auto thead {
+      display: none;
+    }
+  
+    .table-auto tbody,
+    .table-auto tr,
+    .table-auto td {
+      display: block;
+      width: 100%;
+    }
+  
+    .table-auto tr {
+      margin-bottom: 1rem;
+      border: 1px solid #e2e8f0;
+    }
+  
+    .table-auto td {
+      text-align: right;
+      padding: 0.5rem;
+    }
+  
+    .table-auto td:before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  
+    .pagination-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .pagination-buttons button {
+      margin: 0.25rem;
+    }
+  }
+  /* booking */
+  /* Styles for small screens */
+@media (max-width: 640px) {
+    .flex-col {
+      flex-direction: column;
+    }
+  
+    .mt-8 {
+      margin-top: 2rem;
+    }
+  
+    .md\:mt-\[300px\] {
+      margin-top: 2rem;
+    }
+  
+    .md\:mr-8 {
+      margin-right: 0;
+    }
+  
+    .md\:w-\[500px\] {
+      width: 100%;
+    }
+  
+    .md\:h-\[300px\] {
+      height: 200px;
+    }
+  
+    .md\:w-\[300px\] {
+      width: 200px;
+    }
+  
+    .grid-cols-1 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  
+    .flex.justify-around {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .but1,
+    .but2 {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  }
 .card {
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
