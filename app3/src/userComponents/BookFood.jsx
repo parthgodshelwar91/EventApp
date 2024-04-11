@@ -21,18 +21,18 @@ function BookFood() {
   const deluxeimage = "https://media-cdn.tripadvisor.com/media/photo-s/0e/9e/e1/af/photo0jpg.jpg";
 
   return (
-    <div className='flex flex-col justify-center items-center h-screen'>
+    <div className='flex flex-col justify-center items-center min-h-screen'>
       <h1 className="text-3xl font-bold mb-8 text-blue-600">Book Food Items</h1>
       <div className='w-full md:max-w-lg'>
         <div className='bg-white p-8 rounded-lg shadow-lg border-2 border-gray-200'>
           <div className='mb-6'>
             <label className='block text-gray-700 text-sm font-bold mb-2'>Meal Type:</label>
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col sm:flex-row">
               <div className="flex items-center">
                 <input id="isveg" type="checkbox" className="form-checkbox h-5 w-5 text-blue-600" onChange={handlefoodTypeChange} value="veg" checked={selectfoodtype === "veg"} />
                 <label htmlFor="isveg" className="ml-2 text-gray-700">Veg</label>
               </div>
-              <div className="flex items-center md:ml-4">
+              <div className="flex items-center sm:ml-4">
                 <input id="isnonveg" type="checkbox" className="form-checkbox h-5 w-5 text-blue-600" onChange={handlefoodTypeChange} value="nonveg" checked={selectfoodtype === "nonveg"} />
                 <label htmlFor="isnonveg" className="ml-2 text-gray-700">Non-veg</label>
               </div>
@@ -41,12 +41,12 @@ function BookFood() {
 
           <div className='mb-6'>
             <label className='block text-gray-700 text-sm font-bold mb-2'>Meal Type:</label>
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col sm:flex-row">
               <div className="flex items-center">
                 <input id="isLunch" type="checkbox" className="form-checkbox h-5 w-5 text-blue-600" onChange={handleMealTypeChange} value="lunch" checked={selectedMealType === "lunch"} />
                 <label htmlFor="isLunch" className="ml-2 text-gray-700">Lunch</label>
               </div>
-              <div className="flex items-center md:ml-4">
+              <div className="flex items-center sm:ml-4">
                 <input id="isDinner" type="checkbox" className="form-checkbox h-5 w-5 text-blue-600" onChange={handleMealTypeChange} value="dinner" checked={selectedMealType === "dinner"} />
                 <label htmlFor="isDinner" className="ml-2 text-gray-700">Dinner</label>
               </div>
@@ -67,10 +67,10 @@ function BookFood() {
             <label htmlFor="thali" className="ml-2 text-gray-700">Punjabi Thali</label>
           </div>
 
-          <div className="flex justify-end">
+          <div className="flex justify-end flex-wrap sm:flex-nowrap">
             <Link to="/bookLights">
               <button
-                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2 mb-2 sm:mb-0"
                 type="button"
               >
                 Next
@@ -78,7 +78,7 @@ function BookFood() {
             </Link>
             <Link to="/bookEquipment">
               <button
-                className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+                className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded mb-2 sm:mb-0"
                 type="button"
               >
                 Cancel
@@ -92,7 +92,7 @@ function BookFood() {
         <div className='mt-8'>
           <img
             src={deluxeimage}
-            className="h-48 w-64 rounded-md"
+            className="h-48 w-64 rounded-md mx-auto sm:mx-0"
             alt="Deluxe"
           />
         </div>

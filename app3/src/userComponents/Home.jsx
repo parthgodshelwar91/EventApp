@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import '../App.css';
 function Home() {
   return (
-    <div className="p-4 pt-[200px]">
+    <div className="p-4 ">
       <div className='flex flex-wrap justify-center space-x-4 md:space-x-8 lg:space-x-16 mt-12 md:mt-24'>
         <Link to="/booking">
           <div className="product-card w-56 md:w-72 h-80 md:h-96 p-4 m-4 border border-gray-500 rounded-lg text-center relative overflow-hidden transition-transform hover:scale-110 shadow-xl cursor-pointer">

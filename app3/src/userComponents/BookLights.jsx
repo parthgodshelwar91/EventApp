@@ -19,14 +19,14 @@ function BookLights() {
   };
 
   return (
-    <div className='flex flex-col justify-center items-center h-screen'>
+    <div className='flex flex-col justify-center items-center min-h-screen'>
       <h1 className="text-3xl font-bold mb-8 text-blue-600">Book Lighting</h1>
       <div className='flex flex-col md:flex-row'>
         <div className='w-full md:max-w-md rounded-lg overflow-hidden shadow-lg border-2 border-gray-200 mb-4 md:mb-0 md:mr-4'>
           <div className='bg-white p-8'>
             <div className='mb-6'>
               <label className='block text-gray-700 text-sm font-bold mb-2'>Light Type:</label>
-              <div className='flex flex-col md:flex-row'>
+              <div className='flex flex-col sm:flex-row'>
                 <div className="flex items-center">
                   <input
                     id="inDoor"
@@ -38,7 +38,7 @@ function BookLights() {
                   />
                   <label htmlFor="inDoor" className="ml-2 text-gray-700">Indoor</label>
                 </div>
-                <div className="flex items-center md:ml-4">
+                <div className="flex items-center sm:ml-4">
                   <input
                     id="outDoor"
                     type="checkbox"
@@ -71,10 +71,10 @@ function BookLights() {
                 <label htmlFor="out" className="ml-2 text-gray-700">Acqulina</label>
               </div>
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-end flex-wrap sm:flex-nowrap">
               <Link to="/bookFlowers">
                 <button
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4"
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4 mb-2 sm:mb-0"
                   type="button"
                 >
                   Next
@@ -82,7 +82,7 @@ function BookLights() {
               </Link>
               <Link to="/bookFood">
                 <button
-                  className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+                  className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded mb-2 sm:mb-0"
                   type="button"
                 >
                   Cancel
@@ -91,19 +91,19 @@ function BookLights() {
             </div>
           </div>
         </div>
-        <div className="ml-4 mt-4">
+        <div className={`mt-4 md:mt-0 md:ml-4 hidden md:block`}>
           {light === 'on' && (
             <img
               src={lights.indoor[0]}
               alt="Indoor Lights"
-              className="h-48 w-64 object-cover rounded-md"
+              className="h-48 w-64 object-cover rounded-md mx-auto sm:mx-0"
             />
           )}
           {light === 'off' && (
             <img
               src={lights.outdoor[0]}
               alt="Outdoor Lights"
-              className="h-48 w-64 object-cover rounded-md"
+              className="h-48 w-64 object-cover rounded-md mx-auto sm:mx-0"
             />
           )}
         </div>

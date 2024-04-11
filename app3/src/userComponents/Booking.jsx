@@ -54,22 +54,26 @@ function Booking() {
 
   const renderImages = () => {
     const images = eventType ? eventImages[eventType] : [];
+    const isSmallDevice = window.innerWidth <= 640; 
+    if (isSmallDevice) {
+      return null; 
+    }
     return images.map((imageUrl, index) => (
       <img
         key={index}
         src={imageUrl}
-        className="h-[300px] w-[300px] md:h-[300px] md:w-[300px] rounded-xl shadow-xl"
+        className="h-[300px] w-[300px] sm:h-[200px] sm:w-[200px] rounded-xl shadow-xl"
         alt={`Event Type: ${eventType}`}
       />
     ));
   };
 
   return (
-    <div className='flex flex-col md:flex-row justify-center'>
-      <div className="p-4 bg-gray-100 rounded-lg shadow-md w-full md:w-[500px] mt-8 md:mt-[300px] md:mr-8">
+    <div className='flex flex-col sm:flex-col md:flex-row justify-center'>
+      <div className="p-4 bg-gray-100 rounded-lg shadow-md w-full md:w-[500px] mt-8 sm:mt-8 md:mt-[300px] md:mr-8">
         <h2 className="text-xl font-bold mb-4 text-center">Booking Form</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label htmlFor="eventType" className="block text-sm font-medium text-gray-700 mb-1">Event Type</label>
             <select id="eventType" name="eventType" className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-indigo-300" value={eventType} onChange={handleEventTypeChange}>
@@ -96,16 +100,16 @@ function Booking() {
             <label htmlFor="bookingDate" className="block text-sm font-medium text-gray-700 mb-1">Booking Date</label>
             <input type="date" id="bookingDate" name="bookingDate" className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-indigo-300" value={bookingDate} onChange={handleBookingDateChange} />
           </div>
-          <div className='flex justify-around'>
-            <Button color="gray" ripple="light" className='but1 w-42 h-12 hover:bg-white hover:text-black border-2 border-black shadow-xl' onClick={handleButton}>Check Availability</Button>
+          <div className='flex flex-wrap justify-center'>
+            <Button color="gray" ripple="light" className='but1 w-full sm:w-full md:w-42 h-12 hover:bg-white hover:text-black border-2 border-black shadow-xl mb-4 sm:mb-4 md:mb-0' onClick={handleButton}>Check Availability</Button>
             
-            <Button color="gray" ripple="light" className='but2 w-42 h-12 hover:bg-white hover:text-black border-2 border-black shadow-xl hidden'><Link to="/bookEquipment">Add Event</Link></Button>
+            <Button color="gray" ripple="light" className='but2 w-full sm:w-full md:w-42 h-12 hover:bg-white hover:text-black border-2 border-black shadow-xl hidden mb-4 sm:mb-4 md:mb-0'><Link to="/bookEquipment">Add Event</Link></Button>
 
-            <Button color="gray" ripple="light" className='w-2/5 h-12 hover:bg-white hover:text-black border-2 border-black shadow-xl'>Cancel</Button>
+            <Button color="gray" ripple="light" className='w-full sm:w-full md:w-2/5 h-12 hover:bg-white hover:text-black border-2 border-black shadow-xl'>Cancel</Button>
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center mt-8 md:mt-[300px]">{renderImages()}</div>
+      <div className="flex flex-col items-center mt-8 sm:mt-8 md:mt-[300px]">{renderImages()}</div>
     </div>
   );
 }

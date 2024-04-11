@@ -1,18 +1,11 @@
 import React, { useState } from 'react';
+import '../App.css';
 
 function DataTableWithSearch() {
   const [searchTerm, setSearchTerm] = useState('');
   const [data, setData] = useState([
     { name: 'John Doe', bookingNo: 'B001', bookingDate: '2022-03-15', bookingApproved: true, approvedDate: '2022-03-20' },
     { name: 'Jane Smith', bookingNo: 'B002', bookingDate: '2022-03-20', bookingApproved: false, approvedDate: '2022-04-02' },
-    { name: 'Alice Johnson', bookingNo: 'B003', bookingDate: '2022-04-01', bookingApproved: true, approvedDate: '2022-04-02' },
-    { name: 'Michael Brown', bookingNo: 'B004', bookingDate: '2022-04-05', bookingApproved: true, approvedDate: '2022-04-06' },
-    { name: 'Sarah Wilson', bookingNo: 'B005', bookingDate: '2022-04-10', bookingApproved: false, approvedDate: '2022-04-12' },
-    { name: 'David Lee', bookingNo: 'B006', bookingDate: '2022-04-15', bookingApproved: true, approvedDate: '2022-04-16' },
-    { name: 'Emily Martinez', bookingNo: 'B007', bookingDate: '2022-04-20', bookingApproved: false, approvedDate: '2022-04-21' },
-    { name: 'James Anderson', bookingNo: 'B008', bookingDate: '2022-04-25', bookingApproved: true, approvedDate: '2022-04-26' },
-    { name: 'Olivia Garcia', bookingNo: 'B009', bookingDate: '2022-05-01', bookingApproved: true, approvedDate: '2022-05-02' },
-    { name: 'William Taylor', bookingNo: 'B010', bookingDate: '2022-05-05', bookingApproved: false, approvedDate: '2022-05-07' }
     
   ]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -20,7 +13,7 @@ function DataTableWithSearch() {
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
-    setCurrentPage(1); // Reset to the first page when performing a search
+    setCurrentPage(1); 
   };
 
   const filteredData = data.filter((item) =>
@@ -36,7 +29,7 @@ function DataTableWithSearch() {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="container mx-auto p-4 mt-[200px]">
+    <div className="container mx-auto p-4 ">
       <div className="flex justify-center mb-4">
         <input
           type="text"

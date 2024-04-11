@@ -5,7 +5,7 @@ import { SiSecurityscorecard } from "react-icons/si";
 import { GrHomeRounded } from "react-icons/gr";
 import { CiUser } from "react-icons/ci";
 
-function Sidebar() {
+function AdminSidebar() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     
     const toggleDropdown = () => {
@@ -23,10 +23,10 @@ function Sidebar() {
         <div className="flex h-screen">
             <div className="sidebar flex flex-col bg-gray-900 text-white w-64">
                 <div className="sidebar-header text-3xl text-red-500 flex items-center justify-center py-4">
-                    <img className="logo-image h-8 w-auto mr-2" /* src={logo} */ />
+                    <img className="logo-image h-8 w-auto mr-2"  />
                     EventApp
                 </div>
-                <div className='flex items-center'>
+                {/* <div className='flex items-center'>
                     <CiUser
                         className="mt-2 ml-6 size-8"
                         
@@ -37,7 +37,7 @@ function Sidebar() {
                         pratik kalghuge
                         
                     </h1>
-                </div>
+                </div> */}
                 <ul className="sidebar-menu flex-1 pt-8">
                 <Link to="/"><li className="flex text-2xl items-center py-4 px-4 hover:bg-slate-400 hover:text-black cursor-pointer">
                         <div className="logo-image h-6 w-auto mr-6"><GrHomeRounded /></div>
@@ -100,10 +100,10 @@ function Sidebar() {
             </div>
 
             <div className="flex-1 bg-gray-100">
-                {/* Content goes here */}
+                
             </div>
         </div>
     );
 }
 
-export default Sidebar;
+export default AdminSidebar;

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Homedata() {
   return (
-    <div className='flex justify-center flex-wrap mt-28 ml-[200px]'>
+    <div className='flex justify-center flex-wrap mt-28 '>
       <div className='w-full sm:w-1/4 mt-6 m-8'>
         <p className='text-lg font-semibold mb-2'>To add venue:</p>
         <button className='bg-black text-white hover:bg-white hover:text-black border border-black h-10 w-full sm:w-40 rounded-md text-lg font-bold'>

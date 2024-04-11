@@ -2,7 +2,7 @@ import React from 'react';
 
 function Bookingtable({ bookings }) {
   return (
-    <div className="flex justify-center mt-[300px]">
+    <div className="flex justify-center ">
       <div className="overflow-x-auto border-gray-500 border-2 rounded-lg shadow-md">
         <table className="w-full table-auto border-collapse">
           <thead className="bg-gray-500">

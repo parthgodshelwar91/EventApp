@@ -22,9 +22,34 @@ function BookEquipment() {
     ],
   };
 
+  const renderImages = () => {
+    const isSmallDevice = window.innerWidth <= 640; 
+    if (isSmallDevice) {
+      return null; 
+    }
+    return (
+      <div className="flex flex-col sm:flex-row items-center">
+        {djChecked && (
+          <img
+            src={soundImages.dj[0]}
+            alt="DJ"
+            className="h-32 w-48 object-cover rounded-md mb-4 sm:mb-0 sm:mr-4"
+          />
+        )}
+        {speakersChecked && (
+          <img
+            src={soundImages.speakers[0]}
+            alt="Speakers"
+            className="h-32 w-48 object-cover rounded-md"
+          />
+        )}
+      </div>
+    );
+  };
+
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen">
-      <div className="bg-white p-8 rounded-lg shadow-md max-w-md w-full md:w-[400px] flex md:mr-8">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4">
+      <div className="bg-white p-6 rounded-lg shadow-md max-w-md w-full sm:w-[400px] mb-8">
         <div>
           <h2 className="text-2xl font-bold mb-4 text-gray-800">Book Equipment</h2>
           <div className="flex items-center mb-4">
@@ -45,10 +70,10 @@ function BookEquipment() {
             />
             <label className="text-gray-700">Speakers and Mic</label>
           </div>
-          <div className="flex justify-end">
+          <div className="flex flex-col sm:flex-row justify-end">
             <Link to="/bookFood">
               <button
-                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4 sm:mb-0 sm:mr-4"
                 type="button"
                 onClick={handleNextClick}
               >
@@ -56,29 +81,17 @@ function BookEquipment() {
               </button>
             </Link>
             <Link to="/booking">
-              <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded" type="button">
+              <button
+                className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+                type="button"
+              >
                 Cancel
               </button>
             </Link>
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center mt-4 md:mt-0">
-        {djChecked && (
-          <img
-            src={soundImages.dj[0]}
-            alt="DJ"
-            className="h-32 w-48 object-cover rounded-md mb-4 md:mb-0 md:mr-4"
-          />
-        )}
-        {speakersChecked && (
-          <img
-            src={soundImages.speakers[0]}
-            alt="Speakers"
-            className="h-32 w-48 object-cover rounded-md"
-          />
-        )}
-      </div>
+      {renderImages()}
     </div>
   );
 }
