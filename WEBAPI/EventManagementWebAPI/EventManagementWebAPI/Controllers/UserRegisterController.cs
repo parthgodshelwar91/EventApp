@@ -2,11 +2,10 @@
 using EventManagementWebAPI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Text;
+using System;
 using System.Security.Cryptography;
-using System.Reflection;
-using System.Data.SqlClient;
-using System.Data;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace EventManagementWebAPI.Controllers
 {
@@ -14,46 +13,57 @@ namespace EventManagementWebAPI.Controllers
     [ApiController]
     public class UserRegisterController : ControllerBase
     {
-        private readonly DAC dac;
-        
+        private readonly DAC _dac;
+
         public UserRegisterController(DAC dac)
         {
-
-            this.dac = dac;
+            _dac = dac;
         }
+
         [HttpPost("register")]
-        public async Task<ActionResult> insert(User user)
+        public async Task<ActionResult> InsertUser(User user)
         {
-            if (user.Password != user.ConfirmPassword)
+            try
             {
-                return BadRequest("Password and confirm password do not match.");
+                if (user == null)
+                {
+                    return BadRequest("User data is null.");
+                }
+
+                if (user.Password != user.ConfirmPassword)
+                {
+                    return BadRequest("Password and confirm password do not match.");
+                }
+
+                string hashedPassword = HashPassword(user.Password);
+                user.Password = hashedPassword;
+
+                // Assuming your DAC method returns a Task and handles database insertion
+                await _dac.insert(user);
+
+                return Ok("User registered successfully.");
             }
-            string hashedPassword = HashPassword(user.Password);
-            user.Password = hashedPassword;
-            string ConfirmPassword = HashPassword(user.ConfirmPassword);
-            user.ConfirmPassword = ConfirmPassword;
-
-            
-            await dac.insert(user);
-            return Ok("User registered successfully.");
-
-
+            catch (Exception ex)
+            {
+                // Log the exception or handle it appropriately
+                return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error: " + ex.Message);
+            }
         }
 
-       
         private string HashPassword(string password)
         {
-            using SHA256 sha256 = SHA256.Create();
-            byte[] hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
-
-            StringBuilder builder = new StringBuilder();
-            for (int i = 0; i < hashedBytes.Length; i++)
+            using (SHA256 sha256 = SHA256.Create())
             {
-                builder.Append(hashedBytes[i].ToString("x2"));
+                byte[] hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < hashedBytes.Length; i++)
+                {
+                    builder.Append(hashedBytes[i].ToString("x2"));
+                }
+
+                return builder.ToString();
             }
-
-            return builder.ToString();
         }
-
     }
 }

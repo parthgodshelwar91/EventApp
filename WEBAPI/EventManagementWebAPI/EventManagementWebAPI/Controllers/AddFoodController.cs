@@ -2,29 +2,25 @@
 using EventManagementWebAPI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.IO;
-using System.Threading.Tasks;
 
 namespace EventManagementWebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class addFlowerController : ControllerBase
+    public class AddFoodController : ControllerBase
     {
-        private readonly FlowerDal _adminDal;
+        private readonly FoodDal _foodDal;
 
-        public addFlowerController(FlowerDal adminDal)
+        public AddFoodController(FoodDal foodDal)
         {
-            _adminDal = adminDal;
+            _foodDal = foodDal;
         }
-
-        [HttpPost("addflower")]
-        public async Task<IActionResult> InsertFlowers(IFormFile FlowerImage, string FName, decimal FlowerCost)
+        [HttpPost("addFood")]
+        public async Task<IActionResult> InsertFood(int FoodType, int MealType,int  DishType, string DishName,IFormFile DishImage,decimal DishCost)
         {
             try
             {
-                if (FlowerImage == null || FlowerImage.Length == 0)
+                if (DishImage == null || DishImage.Length == 0)
                     return BadRequest("No file uploaded.");
 
                 string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
@@ -32,22 +28,25 @@ namespace EventManagementWebAPI.Controllers
                 if (!Directory.Exists(uploadsFolder))
                     Directory.CreateDirectory(uploadsFolder);
 
-                string uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(FlowerImage.FileName);
+                string uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(DishImage.FileName);
                 string filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
-                    await FlowerImage.CopyToAsync(fileStream);
+                    await DishImage.CopyToAsync(fileStream);
                 }
 
-                var flowerData = new Flower
+                var foodData = new Food
                 {
-                    FName = FName,
-                    FlowerCost = FlowerCost,
-                    FlowerImagePath = filePath,
+                  FoodType  =FoodType,
+                  MealType = MealType,
+                    DishType = DishType,
+                    DishName = DishName,
+                    DishImage = filePath,
+                    DishCost= DishCost,
                 };
 
-                await _adminDal.InsertFlowers(flowerData);
+                await _foodDal.InsertFood(foodData);
 
                 return Ok("Flower inserted successfully.");
             }

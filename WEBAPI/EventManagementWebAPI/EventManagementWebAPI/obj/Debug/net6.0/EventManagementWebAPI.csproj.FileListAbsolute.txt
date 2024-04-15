@@ -157,3 +157,4 @@ C:\Users\parth\Desktop\people\parth\Projects\SocialBrand\EventApp\WEBAPI\EventMa
 C:\Users\parth\Desktop\people\parth\Projects\SocialBrand\EventApp\WEBAPI\EventManagementWebAPI\EventManagementWebAPI\obj\Debug\net6.0\EventManagementWebAPI.genruntimeconfig.cache
 C:\Users\parth\Desktop\people\parth\Projects\SocialBrand\EventApp\WEBAPI\EventManagementWebAPI\EventManagementWebAPI\obj\Debug\net6.0\ref\EventManagementWebAPI.dll
 C:\Users\parth\Desktop\people\parth\Projects\SocialBrand\EventApp\WEBAPI\EventManagementWebAPI\EventManagementWebAPI\bin\Debug\net6.0\EventManagementWebAPI.staticwebassets.runtime.json
+C:\Users\anisha\Desktop\Development\EventApp\Backend\EventApp\WEBAPI\EventManagementWebAPI\EventManagementWebAPI\bin\Debug\net6.0\EventManagementWebAPI.staticwebassets.runtime.json

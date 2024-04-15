@@ -2,29 +2,26 @@
 using EventManagementWebAPI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.IO;
-using System.Threading.Tasks;
 
 namespace EventManagementWebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class addFlowerController : ControllerBase
+    public class LightController : ControllerBase
     {
-        private readonly FlowerDal _adminDal;
+        private readonly LightDal _lightDal;
 
-        public addFlowerController(FlowerDal adminDal)
+        public LightController(LightDal lightDal)
         {
-            _adminDal = adminDal;
+            _lightDal = lightDal;
         }
 
-        [HttpPost("addflower")]
-        public async Task<IActionResult> InsertFlowers(IFormFile FlowerImage, string FName, decimal FlowerCost)
+        [HttpPost("addlight")]
+        public async Task<IActionResult> InsertFlowers(IFormFile LightImage, string LName, decimal LightCost,int LightType)
         {
             try
             {
-                if (FlowerImage == null || FlowerImage.Length == 0)
+                if (LightImage == null || LightImage.Length == 0)
                     return BadRequest("No file uploaded.");
 
                 string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
@@ -32,22 +29,22 @@ namespace EventManagementWebAPI.Controllers
                 if (!Directory.Exists(uploadsFolder))
                     Directory.CreateDirectory(uploadsFolder);
 
-                string uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(FlowerImage.FileName);
+                string uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(LightImage.FileName);
                 string filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
-                    await FlowerImage.CopyToAsync(fileStream);
+                    await LightImage.CopyToAsync(fileStream);
                 }
 
-                var flowerData = new Flower
-                {
-                    FName = FName,
-                    FlowerCost = FlowerCost,
-                    FlowerImagePath = filePath,
+                var lightData = new Light
+                {LightType= LightType,
+                    LName = LName,
+                    LightCost = LightCost,
+                    LightImage = filePath,
                 };
 
-                await _adminDal.InsertFlowers(flowerData);
+                await _lightDal.InsertLight(lightData);
 
                 return Ok("Flower inserted successfully.");
             }
@@ -57,5 +54,7 @@ namespace EventManagementWebAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error: " + ex.Message);
             }
         }
+
+
     }
 }

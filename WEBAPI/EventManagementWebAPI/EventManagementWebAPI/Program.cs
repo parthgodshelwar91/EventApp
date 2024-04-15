@@ -23,7 +23,13 @@ builder.Services.AddStackExchangeRedisCache(options =>
 var provider =builder.Services.BuildServiceProvider();
 var config=provider.GetRequiredService<IConfiguration>();
 builder.Services.AddSingleton<DAC>(item => new DAC(config.GetConnectionString("dbcs")));
-builder.Services.AddSingleton<ADMINDAL>(item => new ADMINDAL(config.GetConnectionString("dbcs")));
+builder.Services.AddSingleton<FlowerDal>(item => new FlowerDal(config.GetConnectionString("dbcs")));
+builder.Services.AddSingleton<VenueDal>(item => new VenueDal(config.GetConnectionString("dbcs")));
+builder.Services.AddSingleton<EquipmentDaL>(item => new EquipmentDaL(config.GetConnectionString("dbcs")));
+builder.Services.AddSingleton<FoodDal>(item => new FoodDal(config.GetConnectionString("dbcs")));
+
+
+
 
 var app = builder.Build();
 

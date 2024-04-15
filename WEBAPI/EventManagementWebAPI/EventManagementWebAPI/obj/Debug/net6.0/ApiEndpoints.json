@@ -8,9 +8,60 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "flower",
-        "Type": "EventManagementWebAPI.Models.Flower",
-        "IsRequired": true
+        "Name": "FlowerImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "FName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FlowerCost",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventManagementWebAPI.Controllers.AddFoodController",
+    "Method": "InsertFood",
+    "RelativePath": "api/AddFood/addFood",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FoodType",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MealType",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DishType",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DishName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DishImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "DishCost",
+        "Type": "System.Decimal",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -24,9 +75,19 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "equipment",
-        "Type": "EventManagementWebAPI.Models.Equipment",
-        "IsRequired": true
+        "Name": "EquipmentImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "EName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EquipmentCost",
+        "Type": "System.Decimal",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -54,7 +115,7 @@
   },
   {
     "ContainingType": "EventManagementWebAPI.Controllers.UserRegisterController",
-    "Method": "insert",
+    "Method": "InsertUser",
     "RelativePath": "api/UserRegister/register",
     "HttpMethod": "POST",
     "IsController": true,
@@ -77,9 +138,19 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "venue",
-        "Type": "EventManagementWebAPI.Models.Venue",
-        "IsRequired": true
+        "Name": "VenueImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "VenueName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VenueCost",
+        "Type": "System.Decimal",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
