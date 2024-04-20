@@ -6,6 +6,9 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using EventManagementWebAPI.Models;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace EventManagementWebAPI.Controllers
 {
@@ -14,10 +17,14 @@ namespace EventManagementWebAPI.Controllers
     public class LoginController : ControllerBase
     {
         private readonly DAC _dac;
+        private readonly IConfiguration _configuration;
 
-        public LoginController(DAC dac)
+
+        public LoginController(DAC dac, IConfiguration configuration)
         {
             _dac = dac;
+            _configuration = configuration;
+
         }
 
         [HttpGet("login")]
@@ -37,7 +44,9 @@ namespace EventManagementWebAPI.Controllers
 
                 if (isAuthenticated != null)
                 {
-                    return Ok("Login successfully.");
+                    var token = GenerateJwtToken(username);
+                    return Ok(new { token });
+                    
                 }
                 else
                 {
@@ -49,6 +58,20 @@ namespace EventManagementWebAPI.Controllers
                 // Log the exception or handle it appropriately
                 return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error: " + ex.Message);
             }
+        }
+        private string GenerateJwtToken(string username)
+        {
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:SecretKey"]));
+            var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(
+                issuer: _configuration["Jwt:Issuer"],
+                audience: _configuration["Jwt:Audience"],
+                claims: new[] { new Claim(ClaimTypes.Name, username) },
+                expires: DateTime.Now.AddMinutes(Convert.ToDouble(_configuration["Jwt:ExpiresInMinutes"])),
+                signingCredentials: credentials);
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
         private string HashPassword(string password)

@@ -93,6 +93,37 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EventManagementWebAPI.Controllers.LightController",
+    "Method": "InsertFlowers",
+    "RelativePath": "api/Light/addlight",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "LightImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "LName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LightCost",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "LightType",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EventManagementWebAPI.Controllers.LoginController",
     "Method": "Login",
     "RelativePath": "api/Login/login",

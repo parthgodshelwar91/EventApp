@@ -1,5 +1,6 @@
 ﻿using EventManagementWebAPI.DAL;
 using EventManagementWebAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,6 +17,7 @@ namespace EventManagementWebAPI.Controllers
             _foodDal = foodDal;
         }
         [HttpPost("addFood")]
+        [Authorize]
         public async Task<IActionResult> InsertFood(int FoodType, int MealType,int  DishType, string DishName,IFormFile DishImage,decimal DishCost)
         {
             try

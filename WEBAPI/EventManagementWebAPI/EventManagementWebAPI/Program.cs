@@ -1,6 +1,12 @@
 using EventManagementWebAPI.DAL;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
+using System.Security.Cryptography;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
 
 // Add services to the container.
 
@@ -29,6 +35,36 @@ builder.Services.AddSingleton<EquipmentDaL>(item => new EquipmentDaL(config.GetC
 builder.Services.AddSingleton<FoodDal>(item => new FoodDal(config.GetConnectionString("dbcs")));
 
 
+//var key = ("your_super_secret_key_here"); // Use a secret key stored securely
+string GenerateJwtKey()
+{
+    byte[] key = new byte[32]; // 256 bits
+    using (var rng = RandomNumberGenerator.Create())
+    {
+        rng.GetBytes(key);
+    }
+    return Convert.ToBase64String(key);
+}
+var base64Key = GenerateJwtKey();
+//var base64Key = GenerateJwtKey();
+configuration["Jwt:SecretKey"] = base64Key;
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = false; // Set to true in production
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(base64Key)),
+        ValidateIssuer = false,
+        ValidateAudience = false
+    };
+});
 
 
 var app = builder.Build();
