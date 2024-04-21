@@ -32,9 +32,10 @@ const Login = ({ setLoggedIn, setUserRole }) => {
       but1.style.display = 'none';
     }
   }
+
   return (
     <div className=" class1 flex flex-col items-center justify-center min-h-screen bg-gray-600">
-      <div className="bg-white p-8 rounded-lg shadow-md">
+      <div className="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
         <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
         <div className="mb-4">
           <label htmlFor="username" className="block text-gray-700 font-bold mb-2">
@@ -65,7 +66,7 @@ const Login = ({ setLoggedIn, setUserRole }) => {
             <button
               type="button"
               onClick={togglePasswordVisibility}
-              className="text-gray-500 hover:text-gray-700 focus:outline-none mt-8"
+              className="text-gray-500 hover:text-gray-700 focus:outline-none"
             >
               {showPassword ? (
                 <AiOutlineEyeInvisible size={20} />
@@ -90,14 +91,13 @@ const Login = ({ setLoggedIn, setUserRole }) => {
         <div className="flex flex-col items-center justify-center">
           <button
             onClick={handleLogin}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
           >
             Login
           </button>
-          <p className=" mt-4">
+          <p className="mt-4 text-center">
             Don't have an account?{" "}
-            <span className="text-blue-400 cursor-pointer ml-1 " onClick={handleregister}>
-              {/* onClick={toggleComponents} {showComponent1 ? <Registration /> : <Login />} */}
+            <span className="text-blue-400 cursor-pointer" onClick={handleregister}>
               <Link to="/register">Register here</Link>
             </span>
           </p>

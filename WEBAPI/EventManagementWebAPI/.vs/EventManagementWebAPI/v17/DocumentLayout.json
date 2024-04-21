@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|c:\\users\\anisha\\desktop\\development\\eventapp\\backend\\eventapp\\webapi\\eventmanagementwebapi\\eventmanagementwebapi\\controllers\\userregistercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|solutionrelative:eventmanagementwebapi\\controllers\\userregistercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|c:\\users\\anisha\\desktop\\development\\eventapp\\backend\\eventapp\\webapi\\eventmanagementwebapi\\eventmanagementwebapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|solutionrelative:eventmanagementwebapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|c:\\users\\anisha\\desktop\\development\\eventapp\\backend\\eventapp\\webapi\\eventmanagementwebapi\\eventmanagementwebapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|solutionrelative:eventmanagementwebapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|c:\\users\\anisha\\desktop\\development\\eventapp\\backend\\eventapp\\webapi\\eventmanagementwebapi\\eventmanagementwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|solutionrelative:eventmanagementwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|c:\\users\\anisha\\desktop\\development\\eventapp\\backend\\eventapp\\webapi\\eventmanagementwebapi\\eventmanagementwebapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|solutionrelative:eventmanagementwebapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|c:\\users\\anisha\\desktop\\development\\eventapp\\backend\\eventapp\\webapi\\eventmanagementwebapi\\eventmanagementwebapi\\controllers\\addfoodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|solutionrelative:eventmanagementwebapi\\controllers\\addfoodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|c:\\users\\anisha\\desktop\\development\\eventapp\\backend\\eventapp\\webapi\\eventmanagementwebapi\\eventmanagementwebapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|solutionrelative:eventmanagementwebapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|c:\\users\\anisha\\desktop\\development\\eventapp\\backend\\eventapp\\webapi\\eventmanagementwebapi\\eventmanagementwebapi\\dal\\dac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,12 +31,8 @@
       "RelativeMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|solutionrelative:eventmanagementwebapi\\eventmanagementwebapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|c:\\users\\anisha\\desktop\\development\\eventapp\\backend\\eventapp\\webapi\\eventmanagementwebapi\\eventmanagementwebapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|solutionrelative:eventmanagementwebapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|c:\\users\\anisha\\desktop\\development\\eventapp\\backend\\eventapp\\webapi\\eventmanagementwebapi\\eventmanagementwebapi\\controllers\\userregistercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|solutionrelative:eventmanagementwebapi\\controllers\\userregistercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|c:\\users\\anisha\\desktop\\development\\eventapp\\backend\\eventapp\\webapi\\eventmanagementwebapi\\eventmanagementwebapi\\controllers\\addfoodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|solutionrelative:eventmanagementwebapi\\controllers\\addfoodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0E92EE4-5DE1-46F4-B917-4C11BA414C79}|EventManagementWebAPI\\EventManagementWebAPI.csproj|c:\\users\\anisha\\desktop\\development\\eventapp\\backend\\eventapp\\webapi\\eventmanagementwebapi\\eventmanagementwebapi\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,76 +102,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EventManagementWebAPI.csproj",
-              "DocumentMoniker": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
-              "RelativeDocumentMoniker": "EventManagementWebAPI\\EventManagementWebAPI.csproj",
-              "ToolTip": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
-              "RelativeToolTip": "EventManagementWebAPI\\EventManagementWebAPI.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-07T01:37:05.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Models\\User.cs",
-              "RelativeDocumentMoniker": "EventManagementWebAPI\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Models\\User.cs",
-              "RelativeToolTip": "EventManagementWebAPI\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T05:58:15.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "EventManagementWebAPI\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "EventManagementWebAPI\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAIwD4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T18:12:13.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "VenueDal.cs",
-              "DocumentMoniker": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\DAL\\VenueDal.cs",
-              "RelativeDocumentMoniker": "EventManagementWebAPI\\DAL\\VenueDal.cs",
-              "ToolTip": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\DAL\\VenueDal.cs",
-              "RelativeToolTip": "EventManagementWebAPI\\DAL\\VenueDal.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T09:44:29.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AddFoodController.cs",
-              "DocumentMoniker": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Controllers\\AddFoodController.cs",
-              "RelativeDocumentMoniker": "EventManagementWebAPI\\Controllers\\AddFoodController.cs",
-              "ToolTip": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Controllers\\AddFoodController.cs",
-              "RelativeToolTip": "EventManagementWebAPI\\Controllers\\AddFoodController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAwBUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T10:29:16.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "EventManagementWebAPI\\appsettings.Development.json",
@@ -184,29 +119,101 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Program.cs",
               "RelativeDocumentMoniker": "EventManagementWebAPI\\Program.cs",
               "ToolTip": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Program.cs",
               "RelativeToolTip": "EventManagementWebAPI\\Program.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAA0wDsAAAAEAAAA",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAQwFQAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T01:10:50.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T01:10:50.099Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "EventManagementWebAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
+              "RelativeDocumentMoniker": "EventManagementWebAPI\\EventManagementWebAPI.csproj",
+              "ToolTip": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
+              "RelativeToolTip": "EventManagementWebAPI\\EventManagementWebAPI.csproj",
+              "ViewState": "AQIAABAAAACAMzMzMzMLwBYAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-07T01:37:05.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "DAC.cs",
               "DocumentMoniker": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\DAL\\DAC.cs",
               "RelativeDocumentMoniker": "EventManagementWebAPI\\DAL\\DAC.cs",
               "ToolTip": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\DAL\\DAC.cs",
               "RelativeToolTip": "EventManagementWebAPI\\DAL\\DAC.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABSAAAA",
+              "ViewState": "AQIAACIAAAAA0MzMzMwGwDcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T18:12:46.239Z",
+              "WhenOpened": "2024-04-06T18:12:46.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserRegisterController.cs",
+              "DocumentMoniker": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Controllers\\UserRegisterController.cs",
+              "RelativeDocumentMoniker": "EventManagementWebAPI\\Controllers\\UserRegisterController.cs",
+              "ToolTip": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Controllers\\UserRegisterController.cs",
+              "RelativeToolTip": "EventManagementWebAPI\\Controllers\\UserRegisterController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAowEcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T09:58:16.78Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "EventManagementWebAPI\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Models\\User.cs",
+              "RelativeToolTip": "EventManagementWebAPI\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T05:58:15.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddFoodController.cs",
+              "DocumentMoniker": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Controllers\\AddFoodController.cs",
+              "RelativeDocumentMoniker": "EventManagementWebAPI\\Controllers\\AddFoodController.cs",
+              "ToolTip": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Controllers\\AddFoodController.cs",
+              "RelativeToolTip": "EventManagementWebAPI\\Controllers\\AddFoodController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAwBUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T10:29:16.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VenueDal.cs",
+              "DocumentMoniker": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\DAL\\VenueDal.cs",
+              "RelativeDocumentMoniker": "EventManagementWebAPI\\DAL\\VenueDal.cs",
+              "ToolTip": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\DAL\\VenueDal.cs",
+              "RelativeToolTip": "EventManagementWebAPI\\DAL\\VenueDal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T09:44:29.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "EventManagementWebAPI\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "EventManagementWebAPI\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAmwD4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T18:12:13.76Z"
             },
             {
               "$type": "Document",
@@ -218,21 +225,7 @@
               "RelativeToolTip": "EventManagementWebAPI\\Controllers\\EquipmentController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T13:36:39.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserRegisterController.cs",
-              "DocumentMoniker": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Controllers\\UserRegisterController.cs",
-              "RelativeDocumentMoniker": "EventManagementWebAPI\\Controllers\\UserRegisterController.cs",
-              "ToolTip": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\Controllers\\UserRegisterController.cs",
-              "RelativeToolTip": "EventManagementWebAPI\\Controllers\\UserRegisterController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAYwCgAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T09:58:16.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T13:36:39.652Z"
             },
             {
               "$type": "Document",
@@ -244,8 +237,7 @@
               "RelativeToolTip": "EventManagementWebAPI\\Models\\Light.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T11:36:04.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T11:36:04.244Z"
             },
             {
               "$type": "Document",
@@ -257,8 +249,7 @@
               "RelativeToolTip": "EventManagementWebAPI\\DAL\\FlowerDal.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T12:16:18.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:16:18.267Z"
             },
             {
               "$type": "Document",
@@ -270,8 +261,7 @@
               "RelativeToolTip": "EventManagementWebAPI\\Controllers\\addFlowerController.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAIBJwDoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T13:45:38.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T13:45:38.849Z"
             },
             {
               "$type": "Document",
@@ -283,8 +273,7 @@
               "RelativeToolTip": "EventManagementWebAPI\\Controllers\\LightController.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAYwC4AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T11:40:32.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T11:40:32.288Z"
             },
             {
               "$type": "Document",
@@ -296,8 +285,7 @@
               "RelativeToolTip": "EventManagementWebAPI\\DAL\\LightDal.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAIBJwB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T11:43:03.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T11:43:03.919Z"
             },
             {
               "$type": "Document",
@@ -309,8 +297,7 @@
               "RelativeToolTip": "EventManagementWebAPI\\Controllers\\VenueController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAIBJwCoAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T12:14:47.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:14:47.507Z"
             },
             {
               "$type": "Document",
@@ -322,8 +309,7 @@
               "RelativeToolTip": "EventManagementWebAPI\\DAL\\FoodDal.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAmwB8AAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T10:30:21.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T10:30:21.085Z"
             },
             {
               "$type": "Document",
@@ -335,8 +321,7 @@
               "RelativeToolTip": "EventManagementWebAPI\\DAL\\EquipmentDaL.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAQwBcAAABmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T09:47:48.689Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T09:47:48.689Z"
             },
             {
               "$type": "Document",
@@ -348,8 +333,7 @@
               "RelativeToolTip": "EventManagementWebAPI\\Models\\Flower.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T13:44:20.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T13:44:20.907Z"
             },
             {
               "$type": "Document",
@@ -361,8 +345,7 @@
               "RelativeToolTip": "EventManagementWebAPI\\Models\\Food.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T10:21:44.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T10:21:44.215Z"
             },
             {
               "$type": "Document",
@@ -374,8 +357,7 @@
               "RelativeToolTip": "EventManagementWebAPI\\Models\\Equipment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T13:30:14.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T13:30:14.282Z"
             },
             {
               "$type": "Document",
@@ -387,8 +369,7 @@
               "RelativeToolTip": "EventManagementWebAPI\\Models\\Venue.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T12:11:18.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T12:11:18.076Z"
             },
             {
               "$type": "Document",
@@ -400,8 +381,7 @@
               "RelativeToolTip": "EventManagementWebAPI\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-07T02:02:14.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T02:02:14.524Z"
             }
           ]
         }

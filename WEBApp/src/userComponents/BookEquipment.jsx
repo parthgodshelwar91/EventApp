@@ -22,68 +22,77 @@ function BookEquipment() {
     ],
   };
 
-  return (
-    <>
-      <div className="flex  items-center justify-center min-h-screen ">
-        <div className="bg-white p-8 rounded-lg shadow-md max-w-md w-full flex">
-          <div>
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">Book Equipment</h2>
-            <div className="flex items-center mb-2">
-              <input
-                type="checkbox"
-                className="form-checkbox h-5 w-5 text-blue-600 mr-2"
-                checked={djChecked}
-                onChange={(e) => setDjChecked(e.target.checked)}
-              />
-              <label className="text-gray-700">DJ</label>
-            </div>
-            <div className="flex items-center mb-4">
-              <input
-                type="checkbox"
-                className="form-checkbox h-5 w-5 text-blue-600 mr-2"
-                checked={speakersChecked}
-                onChange={(e) => setSpeakersChecked(e.target.checked)}
-              />
-              <label className="text-gray-700">Speakers and Mic</label>
-            </div>
-            <div className="flex justify-end">
-              <Link to="/bookFood">
-                <button
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4"
-                  type="button"
-                  onClick={handleNextClick}
-                >
-                  Next
-                </button>
-              </Link>
-              <Link to="/booking">
-                <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded " type="button">
-                  Cancel
-                </button>
-              </Link>
-            </div>
-          </div>
-          
-          
-        </div>
-        <div className="ml-4 flex space-x-6 mt-4">
-            {djChecked && (
-              <img
-                src={soundImages.dj[0]}
-                alt="DJ"
-                className="h-32 w-48 object-cover rounded-md mb-4"
-              />
-            )}
-            {speakersChecked && (
-              <img
-                src={soundImages.speakers[0]}
-                alt="Speakers"
-                className="h-32 w-48 object-cover rounded-md"
-              />
-            )}
-          </div>
+  const renderImages = () => {
+    const isSmallDevice = window.innerWidth <= 640; 
+    if (isSmallDevice) {
+      return null; 
+    }
+    return (
+      <div className="flex flex-col sm:flex-row items-center">
+        {djChecked && (
+          <img
+            src={soundImages.dj[0]}
+            alt="DJ"
+            className="h-32 w-48 object-cover rounded-md mb-4 sm:mb-0 sm:mr-4"
+          />
+        )}
+        {speakersChecked && (
+          <img
+            src={soundImages.speakers[0]}
+            alt="Speakers"
+            className="h-32 w-48 object-cover rounded-md"
+          />
+        )}
       </div>
-    </>
+    );
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center px-4">
+      <div className="bg-white p-6 rounded-lg shadow-md max-w-md w-full sm:w-[400px] mb-8">
+        <div>
+          <h2 className="text-2xl font-bold mb-4 text-gray-800">Book Equipment</h2>
+          <div className="flex items-center mb-4">
+            <input
+              type="checkbox"
+              className="form-checkbox h-5 w-5 text-blue-600 mr-2"
+              checked={djChecked}
+              onChange={(e) => setDjChecked(e.target.checked)}
+            />
+            <label className="text-gray-700">DJ</label>
+          </div>
+          <div className="flex items-center mb-4">
+            <input
+              type="checkbox"
+              className="form-checkbox h-5 w-5 text-blue-600 mr-2"
+              checked={speakersChecked}
+              onChange={(e) => setSpeakersChecked(e.target.checked)}
+            />
+            <label className="text-gray-700">Speakers and Mic</label>
+          </div>
+          <div className="flex flex-col sm:flex-row justify-end">
+            <Link to="/bookFood">
+              <button
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4 sm:mb-0 sm:mr-4"
+                type="button"
+                onClick={handleNextClick}
+              >
+                Next
+              </button>
+            </Link>
+            <Link to="/booking">
+              <button
+                className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+                type="button"
+              >
+                Cancel
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
+      {renderImages()}
+    </div>
   );
 }
 

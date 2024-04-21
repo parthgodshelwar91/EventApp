@@ -34,7 +34,7 @@ const Registration = () => {
       <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 max-w-4xl w-full">
         <h2 className="text-2xl font-bold mb-6 text-center">Registration</h2>
         <form onSubmit={handleSubmit} className="flex flex-col ">
-          {/* First row */}
+          
           <div className='flex flex-wrap space-x-10 '>
           <div className="col-span-3 mb-4 pr-8 ">
             <label className="block text-gray-700 font-bold mb-2" htmlFor="fullName">
@@ -85,7 +85,7 @@ const Registration = () => {
             </select>
           </div>
           </div>
-          {/* Second row */}
+          
           <div className='flex flex-wrap space-x-10'>
           <div className="col-span-3 mb-4">
             <label className="block text-gray-700 font-bold mb-2" htmlFor="state">
@@ -131,7 +131,7 @@ const Registration = () => {
           </div>
           </div>
           
-          {/* Third row */}
+          
           <div className='flex flex-wrap space-x-10'>
           <div className="col-span-3 mb-4">
             <label className="block text-gray-700 font-bold mb-2" htmlFor="emailId">
@@ -191,7 +191,7 @@ const Registration = () => {
             />
           </div>
           </div>
-          {/* Fourth row */}
+          
           <div className='flex flex-wrap space-x-10'>
           <div className="col-span-3 mb-4">
             <label className="block text-gray-700 font-bold mb-2" htmlFor="username">

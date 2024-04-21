@@ -36,8 +36,10 @@ namespace EventManagementWebAPI.Controllers
                 }
 
                 string hashedPassword = HashPassword(user.Password);
+                string hashPasswordRe = HashPassword(user.ConfirmPassword);
                 user.Password = hashedPassword;
-
+                user.ConfirmPassword
+                    = hashPasswordRe;
                 // Assuming your DAC method returns a Task and handles database insertion
                 await _dac.insert(user);
 
