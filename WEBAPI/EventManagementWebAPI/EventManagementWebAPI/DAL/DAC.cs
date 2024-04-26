@@ -27,11 +27,15 @@ namespace EventManagementWebAPI.DAL
 
             SqlCommand command = connection.CreateCommand();
             command.CommandType = CommandType.Text;
-            command.CommandText = "INSERT INTO Registration (Name,Country,MobileNumber,Email,Username,Password,ConfirmPassword,Gender,Birthdate,RoleId) VALUES (@Name,@Country,@MobileNumber,@Email,@Username,@Password,@ConfirmPassword,@Gender,@Birthdate,1)";
+            command.CommandText = "INSERT INTO Registration (Name,Country,MobileNumber,Email,State,Address,City,Username,Password,ConfirmPassword,Gender,Birthdate,RoleId) VALUES (@Name,@Country,@MobileNumber,@Email,@State,@Address,@City,@Username,@Password,@ConfirmPassword,@Gender,@Birthdate,1)";
             command.Parameters.AddWithValue("@Name", user.Name);
             command.Parameters.AddWithValue("@Country", user.Country);
             command.Parameters.AddWithValue("@MobileNumber", user.MobileNumber);
             command.Parameters.AddWithValue("@Email", user.Email);
+            command.Parameters.AddWithValue("@State", user.State);
+            command.Parameters.AddWithValue("@Address", user.Address);
+            command.Parameters.AddWithValue("@City", user.City);
+
             command.Parameters.AddWithValue("@Username", user.UserName);
             command.Parameters.AddWithValue("@Password", user.Password);
             command.Parameters.AddWithValue("@ConfirmPassword", user.ConfirmPassword);

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "HpkAWr/lfmFH4dP4PmOhlfB7p79BmyX5Nl8e8RzxtL+RRmSYDC0fmA2v2mfAAnzC2V6ecLdJm3E/cXTMs6BFAQ==",
+  "dgSpecHash": "HvFCMO5kzIhHbBm3sj01LQ2PVVzQb1QRcbYp4OJGsGUq+X12I2aYxABtJFbNIu2H01f+nPKIBHmCrBLAOEOCDw==",
   "success": true,
   "projectFilePath": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anisha\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\anisha\\.nuget\\packages\\azure.identity\\1.10.2\\azure.identity.1.10.2.nupkg.sha512",
+    "C:\\Users\\anisha\\.nuget\\packages\\microsoft.aspnet.cors\\5.3.0\\microsoft.aspnet.cors.5.3.0.nupkg.sha512",
     "C:\\Users\\anisha\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.1.1\\microsoft.aspnetcore.authentication.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\anisha\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.1.1\\microsoft.aspnetcore.authentication.core.2.1.1.nupkg.sha512",
     "C:\\Users\\anisha\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.29\\microsoft.aspnetcore.authentication.jwtbearer.6.0.29.nupkg.sha512",
@@ -79,5 +80,16 @@
     "C:\\Users\\anisha\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\anisha\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.Cors 5.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.Cors",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

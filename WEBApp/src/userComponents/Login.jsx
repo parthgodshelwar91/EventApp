@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Registration from "./Registration";
+
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 const Login = ({ setLoggedIn, setUserRole }) => {
@@ -26,10 +27,10 @@ const Login = ({ setLoggedIn, setUserRole }) => {
     setShowPassword(!showPassword);
   };
 
-  function handleregister(){
-    const but1 =document.querySelector(".class1");
+  function handleregister() {
+    const but1 = document.querySelector(".class1");
     if (but1) {
-      but1.style.display = 'none';
+      but1.style.display = "none";
     }
   }
 
@@ -38,7 +39,10 @@ const Login = ({ setLoggedIn, setUserRole }) => {
       <div className="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
         <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
         <div className="mb-4">
-          <label htmlFor="username" className="block text-gray-700 font-bold mb-2">
+          <label
+            htmlFor="username"
+            className="block text-gray-700 font-bold mb-2"
+          >
             Username
           </label>
           <input
@@ -51,7 +55,10 @@ const Login = ({ setLoggedIn, setUserRole }) => {
           />
         </div>
         <div className="mb-4 relative">
-          <label htmlFor="password" className="block text-gray-700 font-bold mb-2">
+          <label
+            htmlFor="password"
+            className="block text-gray-700 font-bold mb-2"
+          >
             Password
           </label>
           <input
@@ -97,7 +104,10 @@ const Login = ({ setLoggedIn, setUserRole }) => {
           </button>
           <p className="mt-4 text-center">
             Don't have an account?{" "}
-            <span className="text-blue-400 cursor-pointer" onClick={handleregister}>
+            <span
+              className="text-blue-400 cursor-pointer"
+              onClick={handleregister}
+            >
               <Link to="/register">Register here</Link>
             </span>
           </p>
