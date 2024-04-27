@@ -51,10 +51,10 @@ namespace EventManagementWebAPI.DAL
             await connection.OpenAsync();
 
             SqlCommand command = connection.CreateCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "SELECT * FROM Registration WHERE Username = @Username AND ConfirmPassword = @PasswordHash";
+            command.CommandType = CommandType.StoredProcedure;
+            command.CommandText = "usp_Registration_userLogin";
             command.Parameters.AddWithValue("@Username", username);
-            command.Parameters.AddWithValue("@PasswordHash", password);
+            command.Parameters.AddWithValue("@Password", password);
 
             using SqlDataReader reader = await command.ExecuteReaderAsync();
             if (reader.Read())
@@ -71,7 +71,7 @@ namespace EventManagementWebAPI.DAL
         Gender= reader.GetString(reader.GetOrdinal("Gender")),
          Birthdate= reader.GetDateTime(reader.GetOrdinal("Birthdate")),
         Id = reader.GetInt32(reader.GetOrdinal("Id")),
-                    RoleId = reader.GetInt32(reader.GetOrdinal("RoleId")),
+                    RoleName = reader.GetString(reader.GetOrdinal("RoleName")),
                     // Other properties you may need
                 };
 

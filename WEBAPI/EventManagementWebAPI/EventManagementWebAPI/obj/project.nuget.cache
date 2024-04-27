@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HvFCMO5kzIhHbBm3sj01LQ2PVVzQb1QRcbYp4OJGsGUq+X12I2aYxABtJFbNIu2H01f+nPKIBHmCrBLAOEOCDw==",
+  "dgSpecHash": "GShfXn6zmgJuEe9puQ9ZZU+rAmCMfNpP4vU6xA6yYNHzqueutqH9I0Yg93Yur1pEWCWL4/JKYY7ykPbDSuyGsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
+  "projectFilePath": "C:\\Users\\anisha\\Desktop\\Development\\NewEventManagement\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anisha\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\anisha\\.nuget\\packages\\azure.identity\\1.10.2\\azure.identity.1.10.2.nupkg.sha512",

@@ -15,7 +15,7 @@ const Registration = () => {
     password: "",
     confirmPassword: "",
     gender: "",
-    dateOfBirth: "",
+    Birthdate: "",
     roleId: "0",
   });
   const countries = ["India", "USA", "Canada", "UK", "Australia"];
@@ -28,7 +28,7 @@ const Registration = () => {
     e.preventDefault();
     try {
       await axios.post(
-        "https://localhost:7017/api/userregister/register",
+        "https://localhost:7017/api/UserRegister/register",
         formData
       );
       alert("Registration successful!");
@@ -45,7 +45,7 @@ const Registration = () => {
         password: "",
         confirmPassword: "",
         gender: "",
-        dateOfBirth: "",
+        Birthdate: "",
         roleId: "0",
       });
     } catch (error) {
@@ -225,15 +225,15 @@ const Registration = () => {
             <div className="col-span-3 mb-4">
               <label
                 className="block text-gray-700 font-bold mb-2"
-                htmlFor="dateOfBirth"
+                htmlFor="Birthdate"
               >
                 Date of Birth
               </label>
               <input
                 type="date"
-                id="dateOfBirth"
-                name="dateOfBirth"
-                value={formData.dateOfBirth}
+                id="Birthdate"
+                name="Birthdate"
+                value={formData.Birthdate}
                 onChange={handleChange}
                 required
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"

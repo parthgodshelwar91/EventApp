@@ -3562,11 +3562,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\anisha\\Desktop\\Development\\NewEventManagement\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
       "projectName": "EventManagementWebAPI",
-      "projectPath": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
+      "projectPath": "C:\\Users\\anisha\\Desktop\\Development\\NewEventManagement\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
       "packagesPath": "C:\\Users\\anisha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anisha\\Desktop\\Development\\EventApp\\Backend\\EventApp\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\obj\\",
+      "outputPath": "C:\\Users\\anisha\\Desktop\\Development\\NewEventManagement\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\anisha\\AppData\\Roaming\\NuGet\\NuGet.Config",

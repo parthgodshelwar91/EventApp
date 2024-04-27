@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Registration from "./Registration";
-
+import axios from "axios"; // Import axios for making HTTP requests
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 const Login = ({ setLoggedIn, setUserRole }) => {
@@ -11,18 +10,34 @@ const Login = ({ setLoggedIn, setUserRole }) => {
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
-  const handleLogin = () => {
-    if (username === "user" && password === "123456") {
-      setLoggedIn(true);
-      setUserRole("user");
-    } else if (username === "admin" && password === "admin") {
-      setLoggedIn(true);
-      setUserRole("admin");
-    } else {
-      alert("Wrong username or password");
+  const handleLogin = async () => {
+    try {
+      const response = await axios.get(
+        `https://localhost:7017/api/Login/login?username=${username}&password=${password}`
+      );
+
+      const { token, Rolename } = response.data; // Extract token and Rolename from API response
+
+      // Store token and user role (Rolename) in session storage
+      sessionStorage.setItem("token", token);
+      sessionStorage.setItem("userRole", Rolename);
+
+      // Set logged in state and user role in parent component
+
+      // Redirect based on user role (Rolename)
+      if (Rolename === "customer") {
+        setLoggedIn(true);
+        setUserRole("user");
+
+        // Redirect to customer dashboard
+      } else if (Rolename === "admin") {
+        setLoggedIn(true);
+        setUserRole("admin"); // Redirect to customer dashboard
+      }
+    } catch (error) {
+      alert("Invalid username or password"); // Handle authentication error
     }
   };
-
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
@@ -35,7 +50,7 @@ const Login = ({ setLoggedIn, setUserRole }) => {
   }
 
   return (
-    <div className=" class1 flex flex-col items-center justify-center min-h-screen bg-gray-600">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-600">
       <div className="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
         <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
         <div className="mb-4">
@@ -54,7 +69,7 @@ const Login = ({ setLoggedIn, setUserRole }) => {
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
-        <div className="mb-4 relative">
+        <div className="mb-4">
           <label
             htmlFor="password"
             className="block text-gray-700 font-bold mb-2"
@@ -62,52 +77,26 @@ const Login = ({ setLoggedIn, setUserRole }) => {
             Password
           </label>
           <input
-            type={showPassword ? "text" : "password"}
+            type="password"
             id="password"
             placeholder="Enter password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pr-10"
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
-          <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
-            <button
-              type="button"
-              onClick={togglePasswordVisibility}
-              className="text-gray-500 hover:text-gray-700 focus:outline-none"
-            >
-              {showPassword ? (
-                <AiOutlineEyeInvisible size={20} />
-              ) : (
-                <AiOutlineEye size={20} />
-              )}
-            </button>
-          </div>
         </div>
         <div className="flex items-center mb-6">
-          <input
-            type="checkbox"
-            id="rememberMe"
-            checked={rememberMe}
-            onChange={(e) => setRememberMe(e.target.checked)}
-            className="form-checkbox h-5 w-5 text-blue-600"
-          />
-          <label htmlFor="rememberMe" className="ml-2 text-gray-700">
-            Remember me
-          </label>
-        </div>
-        <div className="flex flex-col items-center justify-center">
           <button
             onClick={handleLogin}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
           >
             Login
           </button>
-          <p className="mt-4 text-center">
+        </div>
+        <div className="flex justify-center">
+          <p className="text-center">
             Don't have an account?{" "}
-            <span
-              className="text-blue-400 cursor-pointer"
-              onClick={handleregister}
-            >
+            <span className="text-blue-400 cursor-pointer">
               <Link to="/register">Register here</Link>
             </span>
           </p>

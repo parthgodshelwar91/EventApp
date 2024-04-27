@@ -41,11 +41,12 @@ namespace EventManagementWebAPI.Controllers
 
                 // Check if the username and hashed password match a user in the database
                 User isAuthenticated = await _dac.ValidateUserCredentials(username, hashedPassword);
-
+                string Rolename = isAuthenticated.RoleName;
                 if (isAuthenticated != null)
                 {
+                    
                     var token = GenerateJwtToken(username);
-                    return Ok(new { token });
+                    return Ok(new { token , Rolename });
                     
                 }
                 else
