@@ -39,12 +39,12 @@ function App() {
         
         {loggedIn ? (
           <div className="flex flex-col md:flex-row min-h-screen">
-            {userRole === "admin" ? <Adminsidebar /> : <Sidebar />}
+            {userRole == "admin" ? <Adminsidebar /> : <Sidebar />}
             <div className="flex-1">
               <Routes>
-                {userRole === "admin" ? (
+                {userRole ==="admin" ? (
                   <>
-                    <Route path="/" element={<AdminHome />} />
+                    <Route path="/" element={<AdminHome/>} />
                     <Route path="/addvenue" element={<Addvenue />} />
                     <Route path="/addequip" element={<Addequip />} />
                     <Route path="/addfood" element={<Addfood />} />

@@ -26,8 +26,8 @@ namespace EventManagementWebAPI.DAL
 
 
                 // Set parameters
-                command.Parameters.AddWithValue("@VName", equipment.EName);
-                command.Parameters.AddWithValue("@VenueCost", equipment.EquipmentCost);
+                command.Parameters.AddWithValue("@EName", equipment.EName);
+                command.Parameters.AddWithValue("@EquipmentCost", equipment.EquipmentCost);
                 command.Parameters.AddWithValue("@EquipmentImage", equipment.EquipmentImagePath);
 
                 await command.ExecuteNonQueryAsync();

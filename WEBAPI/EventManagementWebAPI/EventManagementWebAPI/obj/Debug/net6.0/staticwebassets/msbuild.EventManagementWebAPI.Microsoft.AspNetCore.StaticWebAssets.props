@@ -1,5 +1,21 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\07f98ab0-00b4-440a-b744-0f1abcf2e716_pexels-david-bartus-2379653.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EventManagementWebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EventManagementWebAPI</BasePath>
+      <RelativePath>uploads/07f98ab0-00b4-440a-b744-0f1abcf2e716_pexels-david-bartus-2379653.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\07f98ab0-00b4-440a-b744-0f1abcf2e716_pexels-david-bartus-2379653.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\0c8ca48e-3b4b-444d-9ade-e7f879c6b88b_pexels-brett-sayles-1869322.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>EventManagementWebAPI</SourceId>
@@ -31,6 +47,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\1916a576-fe3e-433f-ba59-10b494eb911e_pexels-david-bartus-2379653.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\2da0686b-5eb4-4687-a8e9-35a29996db45_pexels-david-bartus-2379653.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EventManagementWebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EventManagementWebAPI</BasePath>
+      <RelativePath>uploads/2da0686b-5eb4-4687-a8e9-35a29996db45_pexels-david-bartus-2379653.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\2da0686b-5eb4-4687-a8e9-35a29996db45_pexels-david-bartus-2379653.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\597cf23e-45f1-4c48-a955-72a6a656c20e_pexels-david-bartus-2379653.jpg))">
       <SourceType>Package</SourceType>
@@ -144,6 +176,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\b9d2e3b6-2f86-4dbe-bece-31337b5870d8_pexels-maxime-francis-2246476.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\ead6209a-2f24-4bc9-8004-2aa558c4ce6b_pexels-maxime-francis-2246476.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EventManagementWebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EventManagementWebAPI</BasePath>
+      <RelativePath>uploads/ead6209a-2f24-4bc9-8004-2aa558c4ce6b_pexels-maxime-francis-2246476.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\ead6209a-2f24-4bc9-8004-2aa558c4ce6b_pexels-maxime-francis-2246476.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\eb33c745-7ea4-4b5c-b24b-0ec3ea62eb94_Snapchat-1584652982.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>EventManagementWebAPI</SourceId>
@@ -159,6 +207,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\eb33c745-7ea4-4b5c-b24b-0ec3ea62eb94_Snapchat-1584652982.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\fc807221-416c-45ce-932d-9b6a6f31b1af_pexels-david-bartus-2379653.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>EventManagementWebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/EventManagementWebAPI</BasePath>
+      <RelativePath>uploads/fc807221-416c-45ce-932d-9b6a6f31b1af_pexels-david-bartus-2379653.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\fc807221-416c-45ce-932d-9b6a6f31b1af_pexels-david-bartus-2379653.jpg))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

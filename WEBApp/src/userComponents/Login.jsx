@@ -15,22 +15,27 @@ const Login = ({ setLoggedIn, setUserRole }) => {
       const response = await axios.get(
         `https://localhost:7017/api/Login/login?username=${username}&password=${password}`
       );
+      console.log(response.data);
 
-      const { token, Rolename } = response.data; // Extract token and Rolename from API response
+      const { token, rolename } = response.data;
+
+      // Extract token and Rolename from API response
 
       // Store token and user role (Rolename) in session storage
       sessionStorage.setItem("token", token);
-      sessionStorage.setItem("userRole", Rolename);
+      console.log(token);
 
+      console.log("hii");
+      console.log(response.data.rolename);
       // Set logged in state and user role in parent component
 
       // Redirect based on user role (Rolename)
-      if (Rolename === "customer") {
+      if (rolename === "customer") {
         setLoggedIn(true);
         setUserRole("user");
 
         // Redirect to customer dashboard
-      } else if (Rolename === "admin") {
+      } else if (rolename === "admin") {
         setLoggedIn(true);
         setUserRole("admin"); // Redirect to customer dashboard
       }
