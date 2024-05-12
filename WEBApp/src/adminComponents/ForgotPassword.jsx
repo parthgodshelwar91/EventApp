@@ -1,21 +1,30 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios"; // Import Axios for HTTP requests
 
 const ForgotPassword = () => {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [newPassword, setNewPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    try {
+      const response = await axios.post(
+        `https://localhost:7017/api/ForgotPassword/forgotPassword?username=${username}&email=${email}&password=${newPassword}&retypePassword=${confirmPassword}`
+      );
+      alert("password Updated Successfully");
+      console.log(response.data);
+      // Log success message
 
-    if (newPassword !== confirmPassword) {
-      alert('New password and confirm password do not match');
-      return;
+      // Optionally, redirect the user to login page after password reset
+      // Replace with your navigation logic
+      // history.push('/login');
+    } catch (error) {
+      alert("An error occurred while resetting password."); // Handle error
+      console.error(error);
     }
-
-    console.log(`Password reset for username: ${username}, email: ${email}, new password: ${newPassword}`);
   };
 
   return (
@@ -24,7 +33,10 @@ const ForgotPassword = () => {
         <h2 className="text-2xl font-bold mb-4 text-center">Forgot Password</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label htmlFor="username" className="block text-gray-700 font-semibold mb-2">
+            <label
+              htmlFor="username"
+              className="block text-gray-700 font-semibold mb-2"
+            >
               Username
             </label>
             <input
@@ -38,7 +50,10 @@ const ForgotPassword = () => {
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">
+            <label
+              htmlFor="email"
+              className="block text-gray-700 font-semibold mb-2"
+            >
               Email
             </label>
             <input
@@ -52,7 +67,10 @@ const ForgotPassword = () => {
             />
           </div>
           <div>
-            <label htmlFor="newPassword" className="block text-gray-700 font-semibold mb-2">
+            <label
+              htmlFor="newPassword"
+              className="block text-gray-700 font-semibold mb-2"
+            >
               New Password
             </label>
             <input
@@ -66,7 +84,10 @@ const ForgotPassword = () => {
             />
           </div>
           <div>
-            <label htmlFor="confirmPassword" className="block text-gray-700 font-semibold mb-2">
+            <label
+              htmlFor="confirmPassword"
+              className="block text-gray-700 font-semibold mb-2"
+            >
               Confirm Password
             </label>
             <input
@@ -87,7 +108,7 @@ const ForgotPassword = () => {
               Reset Password
             </button>
             <p className="mt-4 text-gray-700">
-              Remember your password?{' '}
+              Remember your password?{" "}
               <Link to="/login" className="text-blue-500 hover:underline">
                 Login here
               </Link>

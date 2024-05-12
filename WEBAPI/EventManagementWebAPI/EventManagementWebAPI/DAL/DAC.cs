@@ -16,35 +16,57 @@ namespace EventManagementWebAPI.DAL
         }
 
 
-        public async Task insert(User user)
+
+
+        public async Task<int> insert(User user)
         {
-            if (await IsEmailOrUsernameInUse(user.Email, user.UserName))
-            {
-                throw new Exception("Email or username is already in use.");
+            try
+            { 
+                
+                using (SqlConnection connection = new SqlConnection(_connectionString))
+                {
+                    await connection.OpenAsync();
+
+                    SqlCommand command = connection.CreateCommand();
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.CommandText = "USP_Ins_Registration";
+                    command.Parameters.AddWithValue("@Name", user.Name);
+                    command.Parameters.AddWithValue("@Country", user.Country);
+                    command.Parameters.AddWithValue("@MobileNumber", user.MobileNumber);
+                    command.Parameters.AddWithValue("@Email", user.Email);
+                    command.Parameters.AddWithValue("@State", user.State);
+                    command.Parameters.AddWithValue("@Address", user.Address);
+                    command.Parameters.AddWithValue("@City", user.City);
+                    command.Parameters.AddWithValue("@Username", user.UserName);
+                    command.Parameters.AddWithValue("@Password", user.Password);
+                    command.Parameters.AddWithValue("@ConfirmPassword", user.ConfirmPassword);
+                    command.Parameters.AddWithValue("@Gender", user.Gender);
+                    command.Parameters.AddWithValue("@Birthdate", user.Birthdate);
+                    command.Parameters.AddWithValue("@RoleId", user.RoleId);
+
+                    // Execute the stored procedure and retrieve the result set
+                    using (SqlDataReader reader = await command.ExecuteReaderAsync())
+                    {
+                        if (reader.Read())
+                        {
+                            int insertedId = reader.GetInt32(reader.GetOrdinal("InsertedId"));
+                            return insertedId;
+                        }
+                        else
+                        {
+                            throw new Exception("Failed to retrieve InsertedId.");
+                        }
+                    }
+                }
             }
-            using SqlConnection connection = new SqlConnection(_connectionString);
-            await connection.OpenAsync();
-
-            SqlCommand command = connection.CreateCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "INSERT INTO Registration (Name,Country,MobileNumber,Email,State,Address,City,Username,Password,ConfirmPassword,Gender,Birthdate,RoleId) VALUES (@Name,@Country,@MobileNumber,@Email,@State,@Address,@City,@Username,@Password,@ConfirmPassword,@Gender,@Birthdate,1)";
-            command.Parameters.AddWithValue("@Name", user.Name);
-            command.Parameters.AddWithValue("@Country", user.Country);
-            command.Parameters.AddWithValue("@MobileNumber", user.MobileNumber);
-            command.Parameters.AddWithValue("@Email", user.Email);
-            command.Parameters.AddWithValue("@State", user.State);
-            command.Parameters.AddWithValue("@Address", user.Address);
-            command.Parameters.AddWithValue("@City", user.City);
-
-            command.Parameters.AddWithValue("@Username", user.UserName);
-            command.Parameters.AddWithValue("@Password", user.Password);
-            command.Parameters.AddWithValue("@ConfirmPassword", user.ConfirmPassword);
-            command.Parameters.AddWithValue("@Gender", user.Gender);
-            command.Parameters.AddWithValue("@Birthdate", user.Birthdate);
-
-
-            await command.ExecuteNonQueryAsync();
+            catch (Exception ex)
+            {
+                // Log the exception or handle it appropriately
+                throw new Exception("Error inserting user into database: " + ex.Message);
+            }
         }
+
+
         public async Task<User> ValidateUserCredentials(string username,string password) {
 
             using SqlConnection connection = new SqlConnection(_connectionString);

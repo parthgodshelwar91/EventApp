@@ -67,6 +67,63 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EventManagementWebAPI.Controllers.BookingController",
+    "Method": "BookEvent",
+    "RelativePath": "api/Booking/Bookevent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BookingDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "VenueID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "EventTypeID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "GuestCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventManagementWebAPI.Controllers.BookingController",
+    "Method": "CheckBookingAvailability",
+    "RelativePath": "api/Booking/checkAvailability",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "venueId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EventManagementWebAPI.Controllers.EquipmentController",
     "Method": "PostVenue",
     "RelativePath": "api/Equipment/addEquipment",
@@ -91,6 +148,77 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventManagementWebAPI.Controllers.EventsController",
+    "Method": "GetAllEvents",
+    "RelativePath": "api/Events/allEvents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[EventManagementWebAPI.Models.Events, EventManagementWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EventManagementWebAPI.Controllers.ForgotPasswordController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/ForgotPassword/forgotPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "retypePassword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventManagementWebAPI.Controllers.GetAllVenuesController",
+    "Method": "GetAllVenues",
+    "RelativePath": "api/GetAllVenues/allVenues",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[EventManagementWebAPI.Models.Venue, EventManagementWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "EventManagementWebAPI.Controllers.LightController",

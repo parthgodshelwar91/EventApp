@@ -32,7 +32,15 @@ builder.Services.AddSingleton<DAC>(item => new DAC(config.GetConnectionString("d
 builder.Services.AddSingleton<FlowerDal>(item => new FlowerDal(config.GetConnectionString("dbcs")));
 builder.Services.AddSingleton<VenueDal>(item => new VenueDal(config.GetConnectionString("dbcs")));
 builder.Services.AddSingleton<EquipmentDaL>(item => new EquipmentDaL(config.GetConnectionString("dbcs")));
+builder.Services.AddSingleton<LightDal>(item => new LightDal(config.GetConnectionString("dbcs")));
+builder.Services.AddSingleton<EventsRepository>(item => new EventsRepository(config.GetConnectionString("dbcs")));
+builder.Services.AddSingleton<VenueRepository>(item => new VenueRepository(config.GetConnectionString("dbcs")));
+builder.Services.AddSingleton<BookingRepository>(item => new BookingRepository(config.GetConnectionString("dbcs")));
+
+
 builder.Services.AddSingleton<FoodDal>(item => new FoodDal(config.GetConnectionString("dbcs")));
+builder.Services.AddSingleton<ForgotPassword>(item => new ForgotPassword(config.GetConnectionString("dbcs")));
+
 
 
 //var key = ("your_super_secret_key_here"); // Use a secret key stored securely

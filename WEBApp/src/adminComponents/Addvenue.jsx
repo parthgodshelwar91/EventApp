@@ -28,7 +28,7 @@ const Addvenue = () => {
         }
       );
 
-      console.log("Venue added successfully:"); // Clear form fields after successful submission
+      console.log("Venue added successfully:");
       setVenueName("");
       setVenueCost("");
       setVenueImage(null);

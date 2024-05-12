@@ -17,13 +17,15 @@ const Login = ({ setLoggedIn, setUserRole }) => {
       );
       console.log(response.data);
 
-      const { token, rolename } = response.data;
+      const { token, rolename, userId } = response.data;
 
       // Extract token and Rolename from API response
 
       // Store token and user role (Rolename) in session storage
       sessionStorage.setItem("token", token);
-      console.log(token);
+      sessionStorage.setItem("userId", userId);
+
+      console.log(userId + "after login");
 
       console.log("hii");
       console.log(response.data.rolename);

@@ -17,7 +17,7 @@ namespace EventManagementWebAPI.Controllers
             _foodDal = foodDal;
         }
         [HttpPost("addFood")]
-        [Authorize]
+        
         public async Task<IActionResult> InsertFood(int FoodType, int MealType,int  DishType, string DishName,IFormFile DishImage,decimal DishCost)
         {
             try

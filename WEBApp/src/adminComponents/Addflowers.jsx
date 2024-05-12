@@ -32,7 +32,7 @@ const Addflowers = () => {
       setflowersCost("");
       setflowersImage(null);
     } catch (error) {
-      console.error("Error adding venue:", error);
+      console.error("Error adding flower:", error);
       alert("Failed to add venue. Please try again.");
     }
   };
@@ -81,8 +81,7 @@ const Addflowers = () => {
             <input
               id="flowersImage"
               type="file"
-              value={flowersImage}
-              onChange={(e) => setflowersImage(e.target.value)}
+              onChange={(e) => setflowersImage(e.target.files[0])}
               className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
             />
           </div>

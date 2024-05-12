@@ -82,8 +82,7 @@ const Addequip = () => {
             <input
               id="EquipmentImage"
               type="file"
-              value={EquipmentImage}
-              onChange={(e) => setEquipmentImage(e.target.value)}
+              onChange={(e) => setEquipmentImage(e.target.files[0])}
               className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
             />
           </div>

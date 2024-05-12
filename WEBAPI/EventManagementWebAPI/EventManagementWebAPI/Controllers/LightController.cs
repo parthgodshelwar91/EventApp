@@ -46,7 +46,7 @@ namespace EventManagementWebAPI.Controllers
 
                 await _lightDal.InsertLight(lightData);
 
-                return Ok("Flower inserted successfully.");
+                return Ok("Light inserted successfully.");
             }
             catch (Exception ex)
             {

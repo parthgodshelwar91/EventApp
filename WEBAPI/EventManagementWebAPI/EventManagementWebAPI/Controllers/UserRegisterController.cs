@@ -41,9 +41,20 @@ namespace EventManagementWebAPI.Controllers
                 user.ConfirmPassword
                     = hashPasswordRe;
                 // Assuming your DAC method returns a Task and handles database insertion
-                await _dac.insert(user);
+                int insertedId = await _dac.insert(user);
 
-                return Ok("User registered successfully.");
+                if (insertedId == -1)
+                {
+                    return BadRequest("Email or username is already in use.");
+                }
+                else if (insertedId > 0)
+                {
+                    return Ok("User registered successfully. Inserted ID: " + insertedId);
+                }
+                else
+                {
+                    return StatusCode(StatusCodes.Status500InternalServerError, "Failed to register user.");
+                }
             }
             catch (Exception ex)
             {
