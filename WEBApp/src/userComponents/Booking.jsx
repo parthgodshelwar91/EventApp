@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 function Booking() {
-  var [eventType, setEventType] = useState("");
-  var [venueId1, setVenueId1] = useState("");
-  var [EventId1, setEventId1] = useState("");
+  
+  var [eventType, setEventType] = useState('');
+  var [venueId1, setVenueId1] = useState('');
+  var [EventId1, setEventId1] = useState('');
 
-  var [venueType, setVenueType] = useState("");
+  var [venueType, setVenueType] = useState('');
   var [eventOptions, setEventOptions] = useState([]);
   const [venueOptions, setVenueOptions] = useState([]);
   const [isAvailable, setIsAvailable] = useState(false); // Track availability
@@ -49,28 +50,34 @@ function Booking() {
     ],
   };
 
+  
   const handleEventTypeChange = (event) => {
     debugger;
     var e = event.target.id;
     e = document.getElementById(e);
     var value = e.options[e.selectedIndex].value;
-    var text = e.options[e.selectedIndex].text;
+    var Id = e.options[e.selectedIndex];
+    Id = Id.getAttribute("name");
+    //ddl_EventType_id = Id;
     //var selectedOption = e.options[ddl_EventType.selectedIndex];
-
-    setEventType();
-    setEventId1(value);
-    console.log(eventType + "kli");
+    setEventType(value);
+    setEventId1(Id);
+    
+    
   };
-
+  
+  
   const handleVenueTypeChange = (event) => {
+    
     var e = event.target.id;
     e = document.getElementById(e);
     var value = e.options[e.selectedIndex].value;
-    var text = e.options[e.selectedIndex].text;
-    setVenueType(text);
-    setVenueId1(value);
-    console.log("Venue Type" + venueType);
-    console.log("Venue ID" + venueId1);
+    var Id = e.options[e.selectedIndex];
+    Id = Id.getAttribute("name")
+    //ddl_VenueType_id = Id;
+    setVenueType(value);
+    setVenueId1(Id);
+        
   };
 
   const handleNumberOfGuestsChange = (event) => {
@@ -82,14 +89,15 @@ function Booking() {
   };
 
   function handleButton() {
+    debugger;
+    console.log(EventId1);
+    
     if (!eventType || !venueType || !numberOfGuests || !bookingDate) {
       alert("Please fill in all fields.");
     } else {
       const but1 = document.querySelector(".but1");
       if (but1) {
-        {
-          handleCheckAvailability();
-        }
+        handleCheckAvailability();
         but1.style.display = "none";
       }
       // debugger;
@@ -118,7 +126,7 @@ function Booking() {
   // };
   const renderEventOptions = () => {
     return eventOptions.map((event) => (
-      <option key={event.eventID} value={event.EventID}>
+      <option key={event.eventID} value={event.eventType} name={event.eventID}>
         {event.eventType}
       </option>
     ));
@@ -126,11 +134,13 @@ function Booking() {
 
   const renderVenueOptions = () => {
     return venueOptions.map((venue) => (
-      <option key={venue.venueId} value={venue.venueId}>
+      <option key={venue.venueId} value={venue.vName} name={venue.venueId}>
         {venue.vName}
       </option>
     ));
   };
+
+
   const checkBookingAvailability = async (bookingDate, venueId) => {
     try {
       const response = await axios.get(
@@ -142,14 +152,14 @@ function Booking() {
       console.log("Number ", rowCount);
       const but2 = document.querySelector("#Btn_BookEvent");
       if (rowCount === "Available") {
+        alert(rowCount);
         but2.style.display = "inline-block";
         setIsAvailable(true);
       } else {
         but2.style.display = "none";
       }
 
-      if (isAvailable) {
-      }
+      
 
       return rowCount;
     } catch (error) {
@@ -158,20 +168,21 @@ function Booking() {
       throw new Error("Failed to check booking availability.");
     }
   };
-  var venueId;
-  var EventID;
+
+  //var venueId;  
   const handleCheckAvailability = async () => {
+    debugger;
     setEventType("example");
-    console.log(eventType);
-    venueId = venueOptions.find((venue) => venue.vName === venueType)?.venueId;
-    if (!venueId) {
+    
+    //venueId = venueOptions.find((venue) => venue.vName === venueType)?.venueId;
+    if (!venueId1) {
       console.error("Venue not found.");
       return;
     }
 
     try {
       //axios call
-      const rowCount = await checkBookingAvailability(bookingDate, venueId);
+      const rowCount = await checkBookingAvailability(bookingDate, venueId1);
 
       // Handle the result based on the rowCount
     } catch (error) {
@@ -182,11 +193,13 @@ function Booking() {
   };
 
   const BookEvent = async () => {
+    debugger;
+    console.log("hipe ");
     var UserID = sessionStorage.getItem("userId");
-    console.log(EventId1 + " :Event Id ");
+    console.log(eventType + "kli");
     try {
       const response =
-        await axios.post()`https://localhost:7017/api/Booking/Bookevent?BookingDate=${bookingDate}&VenueID=${venueId1}&EventTypeID=${EventId1}&GuestCount=${numberOfGuests}&UserID=${UserID}`;
+        await axios.post(`https://localhost:7017/api/Booking/Bookevent?BookingDate=${bookingDate}&VenueID=${venueId1}&EventTypeID=${EventId1}&GuestCount=${numberOfGuests}&UserID=${UserID}`);
 
       // Handle successful response (e.g., show success message, redirect user)
       console.log("Booking added successfully:", response.data);
@@ -219,8 +232,7 @@ function Booking() {
               name="eventType"
               className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-indigo-300"
               value={eventType}
-              onChange={handleEventTypeChange}
-            >
+              onChange={handleEventTypeChange}>
               <option value="">Select Event Type</option>
               {renderEventOptions()}
             </select>
