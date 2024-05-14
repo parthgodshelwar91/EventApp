@@ -2,14 +2,15 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Booking() {
-  
-  var [eventType, setEventType] = useState('');
-  var [venueId1, setVenueId1] = useState('');
-  var [EventId1, setEventId1] = useState('');
+  var [eventType, setEventType] = useState("");
+  var [venueId1, setVenueId1] = useState("");
+  var [EventId1, setEventId1] = useState("");
+  const navigate = useNavigate();
 
-  var [venueType, setVenueType] = useState('');
+  var [venueType, setVenueType] = useState("");
   var [eventOptions, setEventOptions] = useState([]);
   const [venueOptions, setVenueOptions] = useState([]);
   const [isAvailable, setIsAvailable] = useState(false); // Track availability
@@ -50,7 +51,6 @@ function Booking() {
     ],
   };
 
-  
   const handleEventTypeChange = (event) => {
     debugger;
     var e = event.target.id;
@@ -62,22 +62,17 @@ function Booking() {
     //var selectedOption = e.options[ddl_EventType.selectedIndex];
     setEventType(value);
     setEventId1(Id);
-    
-    
   };
-  
-  
+
   const handleVenueTypeChange = (event) => {
-    
     var e = event.target.id;
     e = document.getElementById(e);
     var value = e.options[e.selectedIndex].value;
     var Id = e.options[e.selectedIndex];
-    Id = Id.getAttribute("name")
+    Id = Id.getAttribute("name");
     //ddl_VenueType_id = Id;
     setVenueType(value);
     setVenueId1(Id);
-        
   };
 
   const handleNumberOfGuestsChange = (event) => {
@@ -91,7 +86,7 @@ function Booking() {
   function handleButton() {
     debugger;
     console.log(EventId1);
-    
+
     if (!eventType || !venueType || !numberOfGuests || !bookingDate) {
       alert("Please fill in all fields.");
     } else {
@@ -140,7 +135,6 @@ function Booking() {
     ));
   };
 
-
   const checkBookingAvailability = async (bookingDate, venueId) => {
     try {
       const response = await axios.get(
@@ -159,8 +153,6 @@ function Booking() {
         but2.style.display = "none";
       }
 
-      
-
       return rowCount;
     } catch (error) {
       setIsAvailable(false);
@@ -169,11 +161,11 @@ function Booking() {
     }
   };
 
-  //var venueId;  
+  //var venueId;
   const handleCheckAvailability = async () => {
     debugger;
     setEventType("example");
-    
+
     //venueId = venueOptions.find((venue) => venue.vName === venueType)?.venueId;
     if (!venueId1) {
       console.error("Venue not found.");
@@ -198,15 +190,24 @@ function Booking() {
     var UserID = sessionStorage.getItem("userId");
     console.log(eventType + "kli");
     try {
-      const response =
-        await axios.post(`https://localhost:7017/api/Booking/Bookevent?BookingDate=${bookingDate}&VenueID=${venueId1}&EventTypeID=${EventId1}&GuestCount=${numberOfGuests}&UserID=${UserID}`);
+      const response = await axios.post(
+        `https://localhost:7017/api/Booking/Bookevent?BookingDate=${bookingDate}&VenueID=${venueId1}&EventTypeID=${EventId1}&GuestCount=${numberOfGuests}&UserID=${UserID}`
+      );
 
       // Handle successful response (e.g., show success message, redirect user)
-      console.log("Booking added successfully:", response.data);
-
+      alert("Booking added successfully:", response.data);
+      console.log(response.data + "Booking added successfully");
+      var { bookingNo, bookingId } = response.data;
+      console.log("Booking Id: " + bookingId); // Corrected console log
       // Assuming you want to navigate to another page after successful booking
       // Replace '/bookEquipment' with the appropriate route
-      window.location.href = "/bookEquipment";
+      if (bookingId) {
+        sessionStorage.setItem("bookingId", bookingId);
+        console.log(bookingId + "SessionStorage bookingId"); // Corrected console log
+      } else {
+        console.error("Booking ID is not available in the response data");
+      }
+      navigate("/bookEquipment");
     } catch (error) {
       console.error("Error adding booking:", error);
 
@@ -214,6 +215,7 @@ function Booking() {
       alert("Failed to add booking. Please try again.");
     }
   };
+
   return (
     <div className="flex flex-col sm:flex-col md:flex-row justify-center">
       <div className="p-4 bg-gray-100 rounded-lg shadow-md w-full md:w-[500px] mt-8 sm:mt-8 md:mt-[300px] md:mr-8">
@@ -232,7 +234,8 @@ function Booking() {
               name="eventType"
               className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-indigo-300"
               value={eventType}
-              onChange={handleEventTypeChange}>
+              onChange={handleEventTypeChange}
+            >
               <option value="">Select Event Type</option>
               {renderEventOptions()}
             </select>

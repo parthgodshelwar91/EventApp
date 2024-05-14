@@ -150,6 +150,52 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EventManagementWebAPI.Controllers.EquipmentController",
+    "Method": "GetAllVenues",
+    "RelativePath": "api/Equipment/allEquipment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[EventManagementWebAPI.Models.Equipment, EventManagementWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EventManagementWebAPI.Controllers.EquipmentController",
+    "Method": "CreateBookingEquipment",
+    "RelativePath": "api/Equipment/BookEquipment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EquipmentID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BookingID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EventManagementWebAPI.Controllers.EventsController",
     "Method": "GetAllEvents",
     "RelativePath": "api/Events/allEvents",

@@ -1,75 +1,115 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function BookEquipment() {
-  const [djChecked, setDjChecked] = useState(false);
-  const [speakersChecked, setSpeakersChecked] = useState(false);
+  const [equipmentList, setEquipmentList] = useState([]);
+  const [selectedEquipment, setSelectedEquipment] = useState([]);
+  const navigate = useNavigate();
 
-  const handleNextClick = () => {
-    if (!djChecked && !speakersChecked) {
-      alert('Please select at least one equipment.');
+  useEffect(() => {
+    fetchEquipment();
+  }, []);
+  const fetchEquipment = async () => {
+    try {
+      const response = await axios.get(
+        "https://localhost:7017/api/Equipment/allEquipment"
+      );
+      setEquipmentList(response.data);
+      console.log(response.data);
+    } catch (error) {
+      console.error("Error fetching equipment:", error);
+    }
+  };
+
+  const handleEquipmentChange = (equipmentId, checked) => {
+    if (checked) {
+      setSelectedEquipment([...selectedEquipment, equipmentId]);
     } else {
-      console.log('Selected equipments:', djChecked, speakersChecked);
+      setSelectedEquipment(
+        selectedEquipment.filter((id) => id !== equipmentId)
+      );
     }
   };
 
   const soundImages = {
     dj: [
-      'https://images.pexels.com/photos/860707/pexels-photo-860707.jpeg?cs=srgb&dl=pexels-isabella-mendes-860707.jpg&fm=jpg',
+      "https://images.pexels.com/photos/860707/pexels-photo-860707.jpeg?cs=srgb&dl=pexels-isabella-mendes-860707.jpg&fm=jpg",
     ],
     speakers: [
-      'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BlYWtlcnxlbnwwfHwwfHx8MA%3D%3D',
+      "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BlYWtlcnxlbnwwfHwwfHx8MA%3D%3D",
     ],
   };
 
-  const renderImages = () => {
-    const isSmallDevice = window.innerWidth <= 640; 
-    if (isSmallDevice) {
-      return null; 
+  // const renderImages = () => {
+  //   const isSmallDevice = window.innerWidth <= 640;
+  //   if (isSmallDevice) {
+  //     return null;
+  //   }
+  //   return (
+  //     <div className="flex flex-col sm:flex-row items-center">
+  //       {djChecked && (
+  //         <img
+  //           src={soundImages.dj[0]}
+  //           alt="DJ"
+  //           className="h-32 w-48 object-cover rounded-md mb-4 sm:mb-0 sm:mr-4"
+  //         />
+  //       )}
+  //       {speakersChecked && (
+  //         <img
+  //           src={soundImages.speakers[0]}
+  //           alt="Speakers"
+  //           className="h-32 w-48 object-cover rounded-md"
+  //         />
+  //       )}
+  //     </div>
+  //   );
+  // };
+  console.log("selectedEquipment" + selectedEquipment);
+  const handleNextClick = async () => {
+    if (selectedEquipment.length === 0) {
+      alert("Please select at least one equipment.");
+      return;
     }
-    return (
-      <div className="flex flex-col sm:flex-row items-center">
-        {djChecked && (
-          <img
-            src={soundImages.dj[0]}
-            alt="DJ"
-            className="h-32 w-48 object-cover rounded-md mb-4 sm:mb-0 sm:mr-4"
-          />
-        )}
-        {speakersChecked && (
-          <img
-            src={soundImages.speakers[0]}
-            alt="Speakers"
-            className="h-32 w-48 object-cover rounded-md"
-          />
-        )}
-      </div>
-    );
-  };
 
+    try {
+      const userId = sessionStorage.getItem("userId");
+      const bookingId = sessionStorage.getItem("bookingId");
+      const selectedEquipmentString = selectedEquipment.join(",");
+      const response = await axios.post(
+        `https://localhost:7017/api/Equipment/BookEquipment?EquipmentID=${selectedEquipmentString}&CreatedBy=${userId}&BookingID=${bookingId}`
+      );
+
+      console.log("Booking equipment created successfully:", response.data);
+      navigate("/BookFood");
+
+      // Perform any further actions upon successful booking
+    } catch (error) {
+      console.error("Error creating booking equipment:", error);
+    }
+  };
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4">
       <div className="bg-white p-6 rounded-lg shadow-md max-w-md w-full sm:w-[400px] mb-8">
         <div>
-          <h2 className="text-2xl font-bold mb-4 text-gray-800">Book Equipment</h2>
-          <div className="flex items-center mb-4">
-            <input
-              type="checkbox"
-              className="form-checkbox h-5 w-5 text-blue-600 mr-2"
-              checked={djChecked}
-              onChange={(e) => setDjChecked(e.target.checked)}
-            />
-            <label className="text-gray-700">DJ</label>
-          </div>
-          <div className="flex items-center mb-4">
-            <input
-              type="checkbox"
-              className="form-checkbox h-5 w-5 text-blue-600 mr-2"
-              checked={speakersChecked}
-              onChange={(e) => setSpeakersChecked(e.target.checked)}
-            />
-            <label className="text-gray-700">Speakers and Mic</label>
-          </div>
+          <h2 className="text-2xl font-bold mb-4 text-gray-800">
+            Book Equipment
+          </h2>
+          {equipmentList.map((equipment) => (
+            <div key={equipment.equipmentId} className="flex items-center mb-4">
+              <input
+                type="checkbox"
+                className="form-checkbox h-5 w-5 text-blue-600 mr-2"
+                checked={selectedEquipment.includes(equipment.equipmentId)}
+                onChange={(e) =>
+                  handleEquipmentChange(equipment.equipmentId, e.target.checked)
+                }
+              />
+              <label className="text-gray-700">{equipment.eName}</label>
+            </div>
+          ))}
+
           <div className="flex flex-col sm:flex-row justify-end">
             <Link to="/bookFood">
               <button
@@ -91,7 +131,7 @@ function BookEquipment() {
           </div>
         </div>
       </div>
-      {renderImages()}
+      {/* {renderImages()} */}
     </div>
   );
 }

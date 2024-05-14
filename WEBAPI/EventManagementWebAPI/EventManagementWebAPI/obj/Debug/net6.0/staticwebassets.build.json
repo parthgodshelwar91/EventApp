@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8lgKKMH2dMX1BkR4x8BFwoBX2SAzPZpDIcZ9ZRXKRcw=",
+  "Hash": "ZONSCQZNOW4QzVLt7GdRds6mwLnrdPfvz/LC24q/uLU=",
   "Source": "EventManagementWebAPI",
   "BasePath": "_content/EventManagementWebAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "EventManagementWebAPI\\wwwroot",
       "Source": "EventManagementWebAPI",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\07f98ab0-00b4-440a-b744-0f1abcf2e716_pexels-david-bartus-2379653.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\07f98ab0-00b4-440a-b744-0f1abcf2e716_pexels-david-bartus-2379653.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/07f98ab0-00b4-440a-b744-0f1abcf2e716_pexels-david-bartus-2379653.jpg",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\07f98ab0-00b4-440a-b744-0f1abcf2e716_pexels-david-bartus-2379653.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\0c8ca48e-3b4b-444d-9ade-e7f879c6b88b_pexels-brett-sayles-1869322.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\0c8ca48e-3b4b-444d-9ade-e7f879c6b88b_pexels-brett-sayles-1869322.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/0c8ca48e-3b4b-444d-9ade-e7f879c6b88b_pexels-brett-sayles-1869322.jpg",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\0c8ca48e-3b4b-444d-9ade-e7f879c6b88b_pexels-brett-sayles-1869322.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\1780fd7c-1981-446a-ab11-6e86bd276396_pexels-maxime-francis-2246476.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\1780fd7c-1981-446a-ab11-6e86bd276396_pexels-maxime-francis-2246476.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/1780fd7c-1981-446a-ab11-6e86bd276396_pexels-maxime-francis-2246476.jpg",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\1780fd7c-1981-446a-ab11-6e86bd276396_pexels-maxime-francis-2246476.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\1916a576-fe3e-433f-ba59-10b494eb911e_pexels-david-bartus-2379653.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\1916a576-fe3e-433f-ba59-10b494eb911e_pexels-david-bartus-2379653.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/1916a576-fe3e-433f-ba59-10b494eb911e_pexels-david-bartus-2379653.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\1916a576-fe3e-433f-ba59-10b494eb911e_pexels-david-bartus-2379653.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\2da0686b-5eb4-4687-a8e9-35a29996db45_pexels-david-bartus-2379653.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\2da0686b-5eb4-4687-a8e9-35a29996db45_pexels-david-bartus-2379653.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/2da0686b-5eb4-4687-a8e9-35a29996db45_pexels-david-bartus-2379653.jpg",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\2da0686b-5eb4-4687-a8e9-35a29996db45_pexels-david-bartus-2379653.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\44eb04da-c918-4890-917f-0d1a21af1629_pexels-brett-sayles-1869322.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\44eb04da-c918-4890-917f-0d1a21af1629_pexels-brett-sayles-1869322.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/44eb04da-c918-4890-917f-0d1a21af1629_pexels-brett-sayles-1869322.jpg",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\44eb04da-c918-4890-917f-0d1a21af1629_pexels-brett-sayles-1869322.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\4c9bec7c-e668-4bbd-8e3e-c3efa501a09a_pexels-brett-sayles-1869322.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\4c9bec7c-e668-4bbd-8e3e-c3efa501a09a_pexels-brett-sayles-1869322.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/4c9bec7c-e668-4bbd-8e3e-c3efa501a09a_pexels-brett-sayles-1869322.jpg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\4c9bec7c-e668-4bbd-8e3e-c3efa501a09a_pexels-brett-sayles-1869322.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\54c22784-4231-4d9f-8bbe-cf085c1ff8c4_pexels-david-bartus-2379653.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\54c22784-4231-4d9f-8bbe-cf085c1ff8c4_pexels-david-bartus-2379653.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/54c22784-4231-4d9f-8bbe-cf085c1ff8c4_pexels-david-bartus-2379653.jpg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\54c22784-4231-4d9f-8bbe-cf085c1ff8c4_pexels-david-bartus-2379653.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\597cf23e-45f1-4c48-a955-72a6a656c20e_pexels-david-bartus-2379653.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\597cf23e-45f1-4c48-a955-72a6a656c20e_pexels-david-bartus-2379653.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/597cf23e-45f1-4c48-a955-72a6a656c20e_pexels-david-bartus-2379653.jpg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\597cf23e-45f1-4c48-a955-72a6a656c20e_pexels-david-bartus-2379653.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\5aaa3854-de2c-4d75-81f4-b5fffe197f70_pexels-maxime-francis-2246476.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\5aaa3854-de2c-4d75-81f4-b5fffe197f70_pexels-maxime-francis-2246476.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/5aaa3854-de2c-4d75-81f4-b5fffe197f70_pexels-maxime-francis-2246476.jpg",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\5aaa3854-de2c-4d75-81f4-b5fffe197f70_pexels-maxime-francis-2246476.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\5ab2bcd6-a418-4fd6-8262-e75ae60c5b5e_pexels-david-bartus-2379653.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\5ab2bcd6-a418-4fd6-8262-e75ae60c5b5e_pexels-david-bartus-2379653.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/5ab2bcd6-a418-4fd6-8262-e75ae60c5b5e_pexels-david-bartus-2379653.jpg",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\5ab2bcd6-a418-4fd6-8262-e75ae60c5b5e_pexels-david-bartus-2379653.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\66b811aa-eb31-4a09-8e49-717a24f2e3ef_pexels-david-bartus-2379653.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\66b811aa-eb31-4a09-8e49-717a24f2e3ef_pexels-david-bartus-2379653.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/66b811aa-eb31-4a09-8e49-717a24f2e3ef_pexels-david-bartus-2379653.jpg",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\66b811aa-eb31-4a09-8e49-717a24f2e3ef_pexels-david-bartus-2379653.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\6fd4d0ba-e887-4f9a-bde9-8ef1654f3bf3_pexels-david-bartus-2379653.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\6fd4d0ba-e887-4f9a-bde9-8ef1654f3bf3_pexels-david-bartus-2379653.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/6fd4d0ba-e887-4f9a-bde9-8ef1654f3bf3_pexels-david-bartus-2379653.jpg",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\6fd4d0ba-e887-4f9a-bde9-8ef1654f3bf3_pexels-david-bartus-2379653.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\83e513de-eb46-49f8-8617-a420820c89d6_pexels-maxime-francis-2246476.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\83e513de-eb46-49f8-8617-a420820c89d6_pexels-maxime-francis-2246476.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/83e513de-eb46-49f8-8617-a420820c89d6_pexels-maxime-francis-2246476.jpg",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\83e513de-eb46-49f8-8617-a420820c89d6_pexels-maxime-francis-2246476.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\889f61de-37bc-46e1-b407-4689111038cc_pexels-david-bartus-2379653.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\889f61de-37bc-46e1-b407-4689111038cc_pexels-david-bartus-2379653.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/889f61de-37bc-46e1-b407-4689111038cc_pexels-david-bartus-2379653.jpg",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\889f61de-37bc-46e1-b407-4689111038cc_pexels-david-bartus-2379653.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\96aa562d-edb7-438a-ae5e-4ffe7f770003_pexels-maxime-francis-2246476.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\96aa562d-edb7-438a-ae5e-4ffe7f770003_pexels-maxime-francis-2246476.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/96aa562d-edb7-438a-ae5e-4ffe7f770003_pexels-maxime-francis-2246476.jpg",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\96aa562d-edb7-438a-ae5e-4ffe7f770003_pexels-maxime-francis-2246476.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\9ebd022d-a958-421b-9f72-56976bc43695_pexels-maxime-francis-2246476.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\9ebd022d-a958-421b-9f72-56976bc43695_pexels-maxime-francis-2246476.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/9ebd022d-a958-421b-9f72-56976bc43695_pexels-maxime-francis-2246476.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\9ebd022d-a958-421b-9f72-56976bc43695_pexels-maxime-francis-2246476.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\aa301e70-a6f6-4b29-9674-95116409724e_pexels-quang-nguyen-vinh-2166711.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\aa301e70-a6f6-4b29-9674-95116409724e_pexels-quang-nguyen-vinh-2166711.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/aa301e70-a6f6-4b29-9674-95116409724e_pexels-quang-nguyen-vinh-2166711.jpg",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\aa301e70-a6f6-4b29-9674-95116409724e_pexels-quang-nguyen-vinh-2166711.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\b82372df-e40b-4add-a1c6-853e84715239_pexels-david-bartus-2379653.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\b82372df-e40b-4add-a1c6-853e84715239_pexels-david-bartus-2379653.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/b82372df-e40b-4add-a1c6-853e84715239_pexels-david-bartus-2379653.jpg",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\b82372df-e40b-4add-a1c6-853e84715239_pexels-david-bartus-2379653.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\b9d2e3b6-2f86-4dbe-bece-31337b5870d8_pexels-maxime-francis-2246476.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\b9d2e3b6-2f86-4dbe-bece-31337b5870d8_pexels-maxime-francis-2246476.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/b9d2e3b6-2f86-4dbe-bece-31337b5870d8_pexels-maxime-francis-2246476.jpg",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\b9d2e3b6-2f86-4dbe-bece-31337b5870d8_pexels-maxime-francis-2246476.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\c13637a2-d8d4-413b-8b6e-9d900caf6b4c_pexels-maxime-francis-2246476.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\c13637a2-d8d4-413b-8b6e-9d900caf6b4c_pexels-maxime-francis-2246476.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/c13637a2-d8d4-413b-8b6e-9d900caf6b4c_pexels-maxime-francis-2246476.jpg",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\c13637a2-d8d4-413b-8b6e-9d900caf6b4c_pexels-maxime-francis-2246476.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\cb243492-f4de-4e6a-8c32-cacf86a0b4bb_pexels-brett-sayles-1869322.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\cb243492-f4de-4e6a-8c32-cacf86a0b4bb_pexels-brett-sayles-1869322.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/cb243492-f4de-4e6a-8c32-cacf86a0b4bb_pexels-brett-sayles-1869322.jpg",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\cb243492-f4de-4e6a-8c32-cacf86a0b4bb_pexels-brett-sayles-1869322.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\d5aaec08-177c-4e1a-ad4c-19f98ef4c524_pexels-brett-sayles-1869322.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\d5aaec08-177c-4e1a-ad4c-19f98ef4c524_pexels-brett-sayles-1869322.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/d5aaec08-177c-4e1a-ad4c-19f98ef4c524_pexels-brett-sayles-1869322.jpg",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\d5aaec08-177c-4e1a-ad4c-19f98ef4c524_pexels-brett-sayles-1869322.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\e60f6681-f9db-4698-871c-25c3641b94eb_pexels-quang-nguyen-vinh-2166711.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\e60f6681-f9db-4698-871c-25c3641b94eb_pexels-quang-nguyen-vinh-2166711.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/e60f6681-f9db-4698-871c-25c3641b94eb_pexels-quang-nguyen-vinh-2166711.jpg",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\e60f6681-f9db-4698-871c-25c3641b94eb_pexels-quang-nguyen-vinh-2166711.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\ead6209a-2f24-4bc9-8004-2aa558c4ce6b_pexels-maxime-francis-2246476.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\ead6209a-2f24-4bc9-8004-2aa558c4ce6b_pexels-maxime-francis-2246476.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/ead6209a-2f24-4bc9-8004-2aa558c4ce6b_pexels-maxime-francis-2246476.jpg",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\ead6209a-2f24-4bc9-8004-2aa558c4ce6b_pexels-maxime-francis-2246476.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\eb33c745-7ea4-4b5c-b24b-0ec3ea62eb94_Snapchat-1584652982.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\eb33c745-7ea4-4b5c-b24b-0ec3ea62eb94_Snapchat-1584652982.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/eb33c745-7ea4-4b5c-b24b-0ec3ea62eb94_Snapchat-1584652982.jpg",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\eb33c745-7ea4-4b5c-b24b-0ec3ea62eb94_Snapchat-1584652982.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\efb401a1-c4d5-4566-ba0e-3a1a04702522_pexels-david-bartus-2379653.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\efb401a1-c4d5-4566-ba0e-3a1a04702522_pexels-david-bartus-2379653.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/efb401a1-c4d5-4566-ba0e-3a1a04702522_pexels-david-bartus-2379653.jpg",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\efb401a1-c4d5-4566-ba0e-3a1a04702522_pexels-david-bartus-2379653.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\f8c44743-5443-4fa9-bfef-2e2a3fd0cb7e_pexels-david-bartus-2379653.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\f8c44743-5443-4fa9-bfef-2e2a3fd0cb7e_pexels-david-bartus-2379653.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/f8c44743-5443-4fa9-bfef-2e2a3fd0cb7e_pexels-david-bartus-2379653.jpg",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\f8c44743-5443-4fa9-bfef-2e2a3fd0cb7e_pexels-david-bartus-2379653.jpg"
     },
     {
-      "Identity": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\fc807221-416c-45ce-932d-9b6a6f31b1af_pexels-david-bartus-2379653.jpg",
+      "Identity": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\uploads\\fc807221-416c-45ce-932d-9b6a6f31b1af_pexels-david-bartus-2379653.jpg",
       "SourceId": "EventManagementWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\wwwroot\\",
       "BasePath": "_content/EventManagementWebAPI",
       "RelativePath": "uploads/fc807221-416c-45ce-932d-9b6a6f31b1af_pexels-david-bartus-2379653.jpg",
       "AssetKind": "All",

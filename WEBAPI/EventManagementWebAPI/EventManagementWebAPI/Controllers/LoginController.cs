@@ -46,7 +46,7 @@ namespace EventManagementWebAPI.Controllers
                 if (isAuthenticated != null)
                 {
                     
-                    var token = GenerateJwtToken(username);
+                    var token = GenerateJwtToken(username,60);
                     return Ok(new { token , Rolename , userId });
                     
                 }
@@ -61,7 +61,7 @@ namespace EventManagementWebAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error: " + ex.Message);
             }
         }
-        private string GenerateJwtToken(string username)
+        private string GenerateJwtToken(string username, int expiresInMinutes)
         {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:SecretKey"]));
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -70,7 +70,7 @@ namespace EventManagementWebAPI.Controllers
                 issuer: _configuration["Jwt:Issuer"],
                 audience: _configuration["Jwt:Audience"],
                 claims: new[] { new Claim(ClaimTypes.Name, username) },
-                expires: DateTime.Now.AddMinutes(Convert.ToDouble(_configuration["Jwt:ExpiresInMinutes"])),
+                expires: DateTime.Now.AddMinutes(expiresInMinutes),
                 signingCredentials: credentials);
 
             return new JwtSecurityTokenHandler().WriteToken(token);

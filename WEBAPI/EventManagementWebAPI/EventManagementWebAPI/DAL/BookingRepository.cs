@@ -73,6 +73,7 @@ namespace EventManagementWebAPI.DAL
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 
+                
                 if(dt.Rows.Count > 0)
                 {
 

@@ -1,4 +1,5 @@
-﻿using EventManagementWebAPI.DAL;
+﻿using Azure.Core;
+using EventManagementWebAPI.DAL;
 using EventManagementWebAPI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -55,6 +56,32 @@ namespace EventManagementWebAPI.Controllers
             {
                 // Log the exception or handle it appropriately
                 return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error: " + ex.Message);
+            }
+        }
+
+      
+
+        [HttpGet("allEquipment")]
+        public ActionResult<List<Equipment>> GetAllVenues()
+        {
+            List<Equipment> equipment = _adminDal.GetAllEquipments();
+            return Ok(equipment);
+        }
+        [HttpPost("BookEquipment")]
+
+        public async Task<IActionResult> CreateBookingEquipment( string EquipmentID,string CreatedBy,int BookingID )
+        {
+            try
+            {
+               
+                
+                    await _adminDal.InsertBookingEquipment(EquipmentID, CreatedBy, BookingID);
+                
+                return Ok("Booking equipment created successfully");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
     }

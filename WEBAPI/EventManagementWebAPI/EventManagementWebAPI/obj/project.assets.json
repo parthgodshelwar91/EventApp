@@ -3557,19 +3557,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\parth\\.nuget\\packages\\": {}
+    "C:\\Users\\anisha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
       "projectName": "EventManagementWebAPI",
-      "projectPath": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
-      "packagesPath": "C:\\Users\\parth\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\parth\\Desktop\\inst\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\obj\\",
+      "projectPath": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\EventManagementWebAPI.csproj",
+      "packagesPath": "C:\\Users\\anisha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\anisha\\Desktop\\Development\\EventProj\\WEBAPI\\EventManagementWebAPI\\EventManagementWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\parth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\anisha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3648,7 +3648,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   },
