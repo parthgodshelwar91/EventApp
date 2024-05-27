@@ -35,6 +35,67 @@ namespace EventManagementWebAPI.DAL
                 return await command.ExecuteNonQueryAsync();
             }
        }
+
+        internal async Task<List<Food>> GetAllFoodDishes(int FoodType,int MealType,int DishType)
+        {
+          
+                List<Food> foods = new List<Food>();
+                using (SqlConnection connection = new SqlConnection(_connectionString))
+                {
+                    connection.Open();
+                    SqlCommand command = connection.CreateCommand();
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.CommandText = "fetchFoodBytype";
+                command.Parameters.AddWithValue("@FoodType", FoodType);
+                command.Parameters.AddWithValue("@MealTime", MealType);
+                command.Parameters.AddWithValue("@DishType", DishType);
+                SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+
+
+                    Food food = new Food
+                    {
+
+
+                        FoodID = (int)reader["FoodID"],
+
+                        DishName = reader["DishName"].ToString()
+
+
+
+                        };
+                    foods.Add(food);
+                    }
+
+
+                }
+                return foods;
+            
+        }
+
+        internal async Task InsertBookFood(BookFoodModel model)
+        {
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+
+                using (SqlCommand command = connection.CreateCommand())
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.CommandText = "BookFood";
+
+                    command.Parameters.AddWithValue("@FoodType", model.FoodType);
+                    command.Parameters.AddWithValue("@MealType", model.MealType);
+                    command.Parameters.AddWithValue("@DishType", model.DishType);
+                    command.Parameters.AddWithValue("@DishName", model.DishName);
+                    command.Parameters.AddWithValue("@Createdby", model.CreatedBy);
+                    command.Parameters.AddWithValue("@BookingID", model.BookingID);
+
+                    await command.ExecuteNonQueryAsync();
+                }
+            }
+        }
     }
 }
 

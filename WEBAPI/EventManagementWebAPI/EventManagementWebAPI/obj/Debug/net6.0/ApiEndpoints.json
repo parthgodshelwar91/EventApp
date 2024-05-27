@@ -26,6 +26,52 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EventManagementWebAPI.Controllers.addFlowerController",
+    "Method": "GetAllFlowers",
+    "RelativePath": "api/addFlower/allFlowers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[EventManagementWebAPI.Models.Flower, EventManagementWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EventManagementWebAPI.Controllers.addFlowerController",
+    "Method": "CreateBookingEquipment",
+    "RelativePath": "api/addFlower/BookFlower",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FlowerID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BookingID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EventManagementWebAPI.Controllers.AddFoodController",
     "Method": "InsertFood",
     "RelativePath": "api/AddFood/addFood",
@@ -62,6 +108,58 @@
         "Name": "DishCost",
         "Type": "System.Decimal",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventManagementWebAPI.Controllers.AddFoodController",
+    "Method": "GetAllDishes",
+    "RelativePath": "api/AddFood/allFoodDishes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FoodType",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MealType",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DishType",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[EventManagementWebAPI.Models.Food, EventManagementWebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EventManagementWebAPI.Controllers.AddFoodController",
+    "Method": "CreateBookFood",
+    "RelativePath": "api/AddFood/BookFood",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "EventManagementWebAPI.Models.BookFoodModel",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

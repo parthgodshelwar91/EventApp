@@ -2,7 +2,7 @@
 {
     public class Food
     {
-
+        public int FoodID { get; set; }
         public int FoodType { get; set; }
         public  int MealType{ get; set; }
         public int DishType { get; set; }

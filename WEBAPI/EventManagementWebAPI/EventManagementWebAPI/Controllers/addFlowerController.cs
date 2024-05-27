@@ -57,5 +57,31 @@ namespace EventManagementWebAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error: " + ex.Message);
             }
         }
+
+
+        [HttpGet("allFlowers")]
+        public ActionResult<List<Flower>> GetAllFlowers()
+        {
+            List<Flower> flower = _adminDal.GetAllFlowers();
+            return Ok(flower);
+        }
+        [HttpPost("BookFlower")]
+
+        public async Task<IActionResult> CreateBookingEquipment(string FlowerID, string CreatedBy, int BookingID)
+        {
+            try
+            {
+
+
+                await _adminDal.InsertBookingflowers(FlowerID, CreatedBy, BookingID);
+
+                return Ok("Booking flowers created successfully");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
     }
 }

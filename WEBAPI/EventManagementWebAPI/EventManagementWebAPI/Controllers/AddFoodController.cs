@@ -58,5 +58,32 @@ namespace EventManagementWebAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error: " + ex.Message);
             }
         }
+
+        [HttpGet("allFoodDishes")]
+        public async Task<ActionResult<List<Food>>> GetAllDishes(int FoodType,int MealType,int DishType)
+        {
+            try
+            {
+                List<Food> events = await _foodDal.GetAllFoodDishes(FoodType, MealType, DishType);
+                return Ok(events);
+            }
+            catch (System.Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+        [HttpPost("BookFood")]
+        public async Task<IActionResult> CreateBookFood([FromBody] BookFoodModel model)
+        {
+            try
+            {
+                await _foodDal.InsertBookFood(model);
+                return Ok("Food booking created successfully");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 }
